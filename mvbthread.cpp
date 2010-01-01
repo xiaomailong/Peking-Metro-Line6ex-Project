@@ -482,6 +482,10 @@ bool MvbThread::init()
     pixymvb_AddPort(0xC09, PIXYMVB_SNKPORT, 16, NULL);
     pixymvb_AddPort(0xC0A, PIXYMVB_SNKPORT, 16, NULL);
 
+    // added by Deng Ran on the 04th of September 2017
+    pixymvb_AddPort(0xD08, PIXYMVB_SNKPORT, 4, NULL);
+    pixymvb_AddPort(0xD09, PIXYMVB_SNKPORT, 8, NULL);
+
     // Change MVB State To Operation State
     RetVal = pixymvb_ChangeState(PIXYMVB_OPERATION_STATE); // OP Mode
 #ifdef DEBUG
@@ -2097,8 +2101,15 @@ void MvbThread::run()
             pixymvb_GetPort(0xC0A, &temp, &snkTmeSupv);
             this->copyPort(0xC0A, temp, snkTmeSupv);
 
+            // added by Deng Ran on the 04th of September 2017
+            pixymvb_GetPort(0xD08, &temp, &snkTmeSupv);
+            this->copyPort(0xD08, temp, snkTmeSupv);
+
+            pixymvb_GetPort(0xD09, &temp, &snkTmeSupv);
+            this->copyPort(0xD09, temp, snkTmeSupv);
+
             // changed by Deng Ran on the 31st of July 2017.
-            msleep(200);
+            msleep(300);
         } // end
 
     }

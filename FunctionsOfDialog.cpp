@@ -61,14 +61,14 @@ void Dialog::updateSignals()
         tdsAxis4MajorFaultCar2 = getBool(0xC10, 13, 2);
         tdsAxis4MinorFaultCar2 = getBool(0xC10, 13, 3);
 
-        tdsAxis1MajorFaultCar3 = getBool(0xC10, 14, 2);
-        tdsAxis1MinorFaultCar3 = getBool(0xC10, 14, 3);
-        tdsAxis2MajorFaultCar3 = getBool(0xC10, 14, 6);
-        tdsAxis2MinorFaultCar3 = getBool(0xC10, 14, 7);
-        tdsAxis3MajorFaultCar3 = getBool(0xC10, 15, 2);
-        tdsAxis3MinorFaultCar3 = getBool(0xC10, 15, 3);
-        tdsAxis4MajorFaultCar3 = getBool(0xC10, 15, 6);
-        tdsAxis4MinorFaultCar3 = getBool(0xC10, 15, 7);
+        tdsAxis1MajorFaultCar3 = getBool(0xC10, 14, 6);
+        tdsAxis1MinorFaultCar3 = getBool(0xC10, 14, 7);
+        tdsAxis2MajorFaultCar3 = getBool(0xC10, 14, 2);
+        tdsAxis2MinorFaultCar3 = getBool(0xC10, 14, 3);
+        tdsAxis3MajorFaultCar3 = getBool(0xC10, 15, 6);
+        tdsAxis3MinorFaultCar3 = getBool(0xC10, 15, 7);
+        tdsAxis4MajorFaultCar3 = getBool(0xC10, 15, 2);
+        tdsAxis4MinorFaultCar3 = getBool(0xC10, 15, 3);
 
         tdsAxis1MajorFaultCar7 = getBool(0xC10, 16, 6);
         tdsAxis1MinorFaultCar7 = getBool(0xC10, 16, 7);
@@ -705,7 +705,7 @@ void Dialog::updateSignals()
 
     // the fault of tds online and it is zero valid.
     this->setUnsignedInt(g_dataBuffer + 4031, 0, false == ccuTdsOnlineCar1);
-    this->setUnsignedInt(g_dataBuffer + 4031, 1, false == ccuTdsOnlineCar1);
+    this->setUnsignedInt(g_dataBuffer + 4031, 1, false == ccuTdsOnlineCar8);
 }
 
 bool Dialog::checkCcuOnline(unsigned short int signal)

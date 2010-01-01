@@ -66,7 +66,8 @@ AllPortsPage::AllPortsPage()
     this->ccuBPorts << new mvb_port_type(0x148, 64) << new mvb_port_type(0x158, 64) << new mvb_port_type(0x168, 64)
                     << new mvb_port_type(0x178, 64) << new mvb_port_type(0x220, 256) << new mvb_port_type(0x221, 256)
                     << new mvb_port_type(0x222, 256) << new mvb_port_type(0x223, 256)
-                    << new mvb_port_type(0xC08, 512) << new mvb_port_type(0xC09, 512) << new mvb_port_type(0xC0A, 512);
+                    << new mvb_port_type(0xC08, 512) << new mvb_port_type(0xC09, 512) << new mvb_port_type(0xC0A, 512)
+                    << new mvb_port_type(0xD08, 1024) << new mvb_port_type(0xD09, 64);
 
     this->ermPorts << new mvb_port_type(0xF00, 256) << new mvb_port_type(0xF01, 256) << new mvb_port_type(0xF02, 256)
                    << new mvb_port_type(0xF03, 256) << new mvb_port_type(0xF10, 256) << new mvb_port_type(0xF11, 256)
