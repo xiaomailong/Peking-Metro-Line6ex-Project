@@ -124,7 +124,7 @@ AllPortsPage::AllPortsPage()
                     << new mvb_port_type(0x140, 64) << new mvb_port_type(0x150, 64) << new mvb_port_type(0x114, 64)
                     << new mvb_port_type(0x184, 64);
 
-    this->hmiPorts << new mvb_port_type(0x200, 256) << new mvb_port_type(0x210, 256) << new mvb_port_type(0x202, 256)
+    this->hmiPorts << new mvb_port_type(0x200, 256) << new mvb_port_type(0x201, 256) << new mvb_port_type(0x202, 256)
                    << new mvb_port_type(0x203, 256) << new mvb_port_type(0x280, 256) << new mvb_port_type(0x281, 256)
                    << new mvb_port_type(0x282, 256) << new mvb_port_type(0x283, 256);
 

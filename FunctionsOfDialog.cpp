@@ -1,5 +1,6 @@
 #include "dialog.h"
 #include <QDateTime>
+#include <math.h>
 
 // added by Deng Ran on the 01st of August 2017.
 void Dialog::updateSignals()
@@ -210,36 +211,36 @@ void Dialog::updateSignals()
         tdsAxis4Temperature7Car8 = getSignedChar(0xC14, 22);
         tdsAxis4Temperature1Car8 = getSignedChar(0xC14, 23);
 
-        tdsProcessorFaultCar1 = getBool(0xC10, 11, 5);
-        tdsSensorFaultCar1 = getBool(0xC10, 11, 6);
+        tdsProcessorFaultCar1 = getBool(0xC10, 11, 6);
+        tdsSensorFaultCar1 = getBool(0xC10, 11, 5);
         tdsControllerFaultCar1 = getBool(0xC10, 11, 7);
 
-        tdsProcessorFaultCar2 = getBool(0xC10, 12, 5);
-        tdsSensorFaultCar2 = getBool(0xC10, 12, 6);
+        tdsProcessorFaultCar2 = getBool(0xC10, 12, 6);
+        tdsSensorFaultCar2 = getBool(0xC10, 12, 5);
         tdsControllerFaultCar2 = getBool(0xC10, 12, 7);
 
-        tdsProcessorFaultCar3 = getBool(0xC10, 17, 5);
-        tdsSensorFaultCar3 = getBool(0xC10, 17, 6);
+        tdsProcessorFaultCar3 = getBool(0xC10, 17, 6);
+        tdsSensorFaultCar3 = getBool(0xC10, 17, 5);
         tdsControllerFaultCar3 = getBool(0xC10, 17, 7);
 
-        tdsProcessorFaultCar4 = getBool(0xC10, 29, 5);
-        tdsSensorFaultCar4 = getBool(0xC10, 29, 6);
+        tdsProcessorFaultCar4 = getBool(0xC10, 29, 6);
+        tdsSensorFaultCar4 = getBool(0xC10, 29, 5);
         tdsControllerFaultCar4 = getBool(0xC10, 29, 7);
 
-        tdsProcessorFaultCar5 = getBool(0xC10, 24, 5);
-        tdsSensorFaultCar5 = getBool(0xC10, 24, 6);
+        tdsProcessorFaultCar5 = getBool(0xC10, 24, 6);
+        tdsSensorFaultCar5 = getBool(0xC10, 24, 5);
         tdsControllerFaultCar5 = getBool(0xC10, 24, 7);
 
-        tdsProcessorFaultCar6 = getBool(0xC10, 23, 5);
-        tdsSensorFaultCar6 = getBool(0xC10, 23, 6);
+        tdsProcessorFaultCar6 = getBool(0xC10, 23, 6);
+        tdsSensorFaultCar6 = getBool(0xC10, 23, 5);
         tdsControllerFaultCar6 = getBool(0xC10, 23, 7);
 
-        tdsProcessorFaultCar7 = getBool(0xC10, 18, 5);
-        tdsSensorFaultCar7 = getBool(0xC10, 18, 6);
+        tdsProcessorFaultCar7 = getBool(0xC10, 18, 6);
+        tdsSensorFaultCar7 = getBool(0xC10, 18, 5);
         tdsControllerFaultCar7 = getBool(0xC10, 18, 7);
 
-        tdsProcessorFaultCar8 = getBool(0xC10, 30, 5);
-        tdsSensorFaultCar8 = getBool(0xC10, 30, 6);
+        tdsProcessorFaultCar8 = getBool(0xC10, 30, 6);
+        tdsSensorFaultCar8 = getBool(0xC10, 30, 5);
         tdsControllerFaultCar8 = getBool(0xC10, 30, 7);
     }
     else if (tdsTrustCar8 && tdsWorkModeCar8 && ccuTdsOnlineCar8)
@@ -529,45 +530,45 @@ void Dialog::updateSignals()
 
     // tds
     // added by Deng Ran on the 22nd of August 2017, the function of fault diagnosis
-    this->setUnsignedInt(g_dataBuffer + 4000, 0, tdsAxis1MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 4000, 1, tdsAxis2MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 4000, 2, tdsAxis3MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 4000, 3, tdsAxis4MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 0, tdsAxis1MajorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 1, tdsAxis2MajorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 2, tdsAxis3MajorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 3, tdsAxis4MajorFaultCar1);
 
-    this->setUnsignedInt(g_dataBuffer + 4000, 4, tdsAxis1MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 4000, 5, tdsAxis2MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 4000, 6, tdsAxis3MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 4000, 7, tdsAxis4MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 4, tdsAxis1MajorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 5, tdsAxis2MajorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 6, tdsAxis3MajorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 7, tdsAxis4MajorFaultCar2);
 
-    this->setUnsignedInt(g_dataBuffer + 4000, 8, tdsAxis1MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 4000, 9, tdsAxis2MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 4000, 10, tdsAxis3MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 4000, 11, tdsAxis4MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 8, tdsAxis1MajorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 9, tdsAxis2MajorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 10, tdsAxis3MajorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 11, tdsAxis4MajorFaultCar3);
 
-    this->setUnsignedInt(g_dataBuffer + 4000, 12, tdsAxis1MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 4000, 13, tdsAxis2MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 4000, 14, tdsAxis3MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 4000, 15, tdsAxis4MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 12, tdsAxis1MajorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 13, tdsAxis2MajorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 14, tdsAxis3MajorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 15, tdsAxis4MajorFaultCar4);
 
-    this->setUnsignedInt(g_dataBuffer + 4001, 0, tdsAxis1MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 4001, 1, tdsAxis2MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 4001, 2, tdsAxis3MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 4001, 3, tdsAxis4MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 0, tdsAxis1MajorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 1, tdsAxis2MajorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 2, tdsAxis3MajorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 3, tdsAxis4MajorFaultCar5);
 
-    this->setUnsignedInt(g_dataBuffer + 4001, 4, tdsAxis1MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 4001, 5, tdsAxis2MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 4001, 6, tdsAxis3MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 4001, 7, tdsAxis4MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 4, tdsAxis1MajorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 5, tdsAxis2MajorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 6, tdsAxis3MajorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 7, tdsAxis4MajorFaultCar6);
 
-    this->setUnsignedInt(g_dataBuffer + 4001, 8, tdsAxis1MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 4001, 9, tdsAxis2MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 4001, 10, tdsAxis3MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 4001, 11, tdsAxis4MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 8, tdsAxis1MajorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 9, tdsAxis2MajorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 10, tdsAxis3MajorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 11, tdsAxis4MajorFaultCar7);
 
-    this->setUnsignedInt(g_dataBuffer + 4001, 12, tdsAxis1MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 4001, 13, tdsAxis2MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 4001, 14, tdsAxis3MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 4001, 15, tdsAxis4MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 12, tdsAxis1MajorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 13, tdsAxis2MajorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 14, tdsAxis3MajorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 15, tdsAxis4MajorFaultCar8);
 
     this->setUnsignedInt(g_dataBuffer + 4002, 0, tdsSystemSlightFault);
     this->setUnsignedInt(g_dataBuffer + 4002, 1, tdsInternalBusError);
@@ -696,6 +697,15 @@ void Dialog::updateSignals()
     this->setUnsignedInt(g_dataBuffer + 4025, 0, pmsPantographCamera8AbnormalCar7);
     this->setUnsignedInt(g_dataBuffer + 4025, 1, pmsDeviceTemperatureAbnormalCar7);
     this->setUnsignedInt(g_dataBuffer + 4025, 2, pmsControlSystemTemperatureAbnormalCar7);
+
+    // the fault of pms online and it is zero valid.
+    this->setUnsignedInt(g_dataBuffer + 4030, 0, false == ccuPmsOnlineCar2);
+    this->setUnsignedInt(g_dataBuffer + 4030, 1, false == ccuPmsOnlineCar4);
+    this->setUnsignedInt(g_dataBuffer + 4030, 2, false == ccuPmsOnlineCar7);
+
+    // the fault of tds online and it is zero valid.
+    this->setUnsignedInt(g_dataBuffer + 4031, 0, false == ccuTdsOnlineCar1);
+    this->setUnsignedInt(g_dataBuffer + 4031, 1, false == ccuTdsOnlineCar1);
 }
 
 bool Dialog::checkCcuOnline(unsigned short int signal)
@@ -716,7 +726,7 @@ bool Dialog::checkCcuOnline(unsigned short int signal)
 
 void Dialog::synchronizeTimeWithCcu()
 {
-    if (ccuOnline)
+    if (false == ccuOnline)
     {
         return;
     }
@@ -732,7 +742,10 @@ void Dialog::synchronizeTimeWithCcu()
     QDateTime ccuTime(QDate(2000 + ccuYear, ccuMonth, ccuDay),
                             QTime(ccuHour, ccuMinute, ccuSecond));
 
-    if (abs((long)(ccuTime.toTime_t() - QDateTime::currentDateTime().toTime_t()) > 5))
+    // an abs function and i do not know why the function of abs in lib is not valid.
+    #define _ABS(X) ((X) > 0 ? (X) : -(X))
+
+    if (_ABS(ccuTime.toTime_t() - QDateTime::currentDateTime().toTime_t()) > 5)
     {
         QDate date(2000 + ccuYear, ccuMonth, ccuDay);
         QTime time(ccuHour, ccuMinute, ccuSecond);

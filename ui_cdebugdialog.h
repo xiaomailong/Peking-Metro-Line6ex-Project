@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'cdebugdialog.ui'
 **
-** Created: Sun Aug 20 19:07:29 2017
+** Created: Tue Dec 1 12:13:35 2015
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

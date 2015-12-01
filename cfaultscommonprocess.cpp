@@ -34,8 +34,14 @@ ST_FAULT_INFO g_faultsinforom[] =
     {0x1207,QSTR("PA通信中断"),                                 QSTR("请检查PA硬件或相应接线")},
     {0x1208,QSTR("ATC通信中断"),                                 QSTR("请检查ATC硬件及相应接线")},
     {0x1209,QSTR("FAS通信中断"),                                 QSTR("请检查FAS硬件及相应接线")},
-    {0x1210,QSTR("从CCU离线"),                    QSTR("司机：请关注主机状态，若主机出现故障，建议照网络故障进行处理")},
-    {0x1211,QSTR("主CCU离线，主从切换"),              QSTR("司机：主CCU离线，切至从CCU对运行无影响")},
+
+    // deleted by Deng Ran on the 01st of August 2017.
+    // {0x1210,QSTR("从CCU离线"),                    QSTR("司机：请关注主机状态，若主机出现故障，建议照网络故障进行处理")},
+    // {0x1211,QSTR("主CCU离线，主从切换"),              QSTR("司机：主CCU离线，切至从CCU对运行无影响")},
+
+    // added by Deng Ran on the 01st of August 2017.
+    {0x1210,QSTR("PMS通信中断"), QSTR("请检查BCU硬件及其通信线缆")},
+    {0x1211,QSTR("RSFDS通信中断"), QSTR("请检查BCU硬件及其通信线缆")},
 
 
     {0x1301,QSTR("IO网关通信中断"),                            QSTR("请检查IO网关硬件或相应接线")},
@@ -800,7 +806,7 @@ ST_FAULT_INFO g_faultsinforom[] =
     {0xC232, QSTR("TC2车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
 
     // deleted by Deng Ran on the 21st of August 2017.
-    // {0xC301, QSTR("RSFDS系统轻微故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC301, QSTR("RSFDS系统轻微故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
     {0xC302, QSTR("内部总线通信异常"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
 
     {0xC303, QSTR("TC1车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
@@ -932,8 +938,18 @@ FAULTS_ROM_DATA g_faultsrom[]={
     {0x1209,  2,  D_POS_A,  54,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
     {0x1209,  2,  D_POS_H,  55,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
 
-    {0x1210,  1,  D_POS_H,  54,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
-    {0x1211,  1,  D_POS_A,  55,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
+    // deleted by Deng Ran on the 01st of September 2017.
+    // {0x1210,  1,  D_POS_H,  54,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
+    // {0x1211,  1,  D_POS_A,  55,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
+
+    // the fault of pms
+    {0x1210, 2, D_POS_B, 4030, bit0, false, false, false, E_FAULTS_CATEGORY_TCMS},
+    {0x1210, 2, D_POS_D, 4030, bit1, false, false, false, E_FAULTS_CATEGORY_TCMS},
+    {0x1210, 2, D_POS_G, 4030, bit2, false, false, false, E_FAULTS_CATEGORY_TCMS},
+
+    // the fault of tds
+    {0x1211, 2, D_POS_A, 4031, bit0, false, false, false, E_FAULTS_CATEGORY_TCMS},
+    {0x1211, 2, D_POS_H, 4031, bit1, false, false, false, E_FAULTS_CATEGORY_TCMS},
 
     {0x120B,  2,  D_POS_A,  54,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
     {0x120B,  2,  D_POS_H,  55,   bit0,   false,  false, false,  E_FAULTS_CATEGORY_TCMS   },
@@ -3778,7 +3794,7 @@ FAULTS_ROM_DATA g_faultsrom[]={
     {0xC231, 2, D_POS_H, 4001, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
     {0xC232, 2, D_POS_H, 4001, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    // deleted by Deng Ran on the 21st of August 2017.
+    // the fault of tds, they are internal bus fault and slight fault
     {0xC301, 2, D_POS_A, 4002, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
     {0xC302, 2, D_POS_A, 4002, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
@@ -3806,13 +3822,13 @@ FAULTS_ROM_DATA g_faultsrom[]={
     {0xC322, 2, D_POS_C, 4005, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
     {0xC323, 2, D_POS_C, 4005, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC324, 2, D_POS_D, 3806, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC325, 2, D_POS_D, 3806, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC326, 2, D_POS_D, 3806, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC327, 2, D_POS_D, 3806, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC328, 2, D_POS_D, 3806, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC329, 2, D_POS_D, 3806, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC330, 2, D_POS_D, 3806, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC324, 2, D_POS_D, 4006, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC325, 2, D_POS_D, 4006, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC326, 2, D_POS_D, 4006, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC327, 2, D_POS_D, 4006, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC328, 2, D_POS_D, 4006, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC329, 2, D_POS_D, 4006, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC330, 2, D_POS_D, 4006, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
     {0xC331, 2, D_POS_E, 4007, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
     {0xC332, 2, D_POS_E, 4007, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
@@ -3909,7 +3925,6 @@ FAULTS_ROM_DATA g_faultsrom[]={
 };
 
 int g_faultsRomLen = sizeof(g_faultsrom)/sizeof(FAULTS_ROM_DATA);
-
 
 bool FaultsVerdict(FAULTS_ROM_DATA *pdata)
 {
@@ -4131,28 +4146,36 @@ bool FaultsVerdict(FAULTS_ROM_DATA *pdata)
             }
         }
 
-        else if (0x1210 == pdata->code)
-        {
-            if (((D_POS_H == pdata->pos) && g_CCU2_comm_err_flg&&(g_CCU1_comm_err_flg==0)))
-            {
-                return true;
-            }
-        }
+        // deleted by Deng Ran on the 01st of September 2017, it is not a ccu fault now.
+        // else if (0x1210 == pdata->code)
+        // {
+        //     if (((D_POS_H == pdata->pos) && g_CCU2_comm_err_flg&&(g_CCU1_comm_err_flg==0)))
+        //     {
+        //         return true;
+        //     }
+        // }
 
-        else if (0x1211 == pdata->code)
-        {
-            if (((D_POS_A == pdata->pos) && g_CCU1_comm_err_flg&&(g_CCU2_comm_err_flg==0)))
-            {
-                return true;
-            }
-        }
+        // deleted by Deng Ran on the 01st of September 2017. it is not a ccu fault now.
+        // else if (0x1211 == pdata->code)
+        // {
+        //     if (((D_POS_A == pdata->pos) && g_CCU1_comm_err_flg&&(g_CCU2_comm_err_flg==0)))
+        //     {
+        //         return true;
+        //     }
+        // }
     }
-    else if (0 != (g_dataBuffer[pdata->word] & pdata->bit))
+
+    // changed by Deng Ran on the 01st of September 2017.
+    if (0 != (g_dataBuffer[pdata->word] & pdata->bit))
     {
         return true;
     }
+    else
+    {
+        return false;
+    }
 
-    return false;
+    // return false;
 }
 
 void AddNewFaultRecordToHistoryList(ST_HISTORY_FAULT_INFO &newinfo)

@@ -381,13 +381,13 @@ void Dialog::OnUpdateData()
     this->updateSignals();
 
     // about 30s
-    if (counter / 70 == 0)
+    if (counter % 70 == 0)
     {
         this->synchronizeTimeWithCcu();
     }
 
     // about 1.2s
-    if (counter / 3 == 0)
+    if (counter % 3 == 0)
     {
         ccuOnline = this->checkCcuOnline(ccuLifeSignal);
     }
@@ -417,8 +417,6 @@ void Dialog::OnUpdateDate()
 // #ifdef USE_MVB_DATA
     // pixymvb_ForceSwitch();
 // #endif
-
-
 
     //send data 28 29 30
     QTime time = QDateTime::currentDateTime().time();
