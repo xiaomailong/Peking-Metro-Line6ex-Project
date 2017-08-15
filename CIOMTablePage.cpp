@@ -326,7 +326,7 @@ ROMDATA g_PicRom_IOMTable[] =
     {QSTR(""),                  D_FONT_BOLD(5),      QRect(293, 511, 37, 17),           Qt::cyan,                Qt::black,          CONTROL_LABEL,           ID_IGNORE        },
 
     {QSTR("说明"),                   D_FONT_BOLD(5),      QRect(331,  61, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_2STATE0        },
-    {QSTR("IES受电弓连锁监视"),                D_FONT(4),      QRect(331, 97, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_2STATE1        },
+    {QSTR("IES弓连锁监视"),                D_FONT(4),      QRect(331, 97, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_2STATE1        },
     {QSTR("电热器1路闭合"),                D_FONT(4),      QRect(331, 115, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_2STATE2        },
     {QSTR("电热器2路闭合"),             D_FONT(4),      QRect(331, 133, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_2STATE3        },
     {QSTR("应急升弓泵监视"),             D_FONT(4),      QRect(331, 151, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_2STATE4        },
@@ -596,7 +596,7 @@ ROMDATA g_PicRom_IOMTable[] =
     {QSTR("总风低压"),             D_FONT(4),      QRect(691, 97, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE1        },
     {QSTR("转向架1切除"),            D_FONT(4),      QRect(691, 115, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE2        },
     {QSTR("转向架2切除"),             D_FONT(4),      QRect(691, 133, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE3        },
-    {QSTR("升弓到位监视"),              D_FONT(4),      QRect(691, 151, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE4       },
+    {QSTR(""),              D_FONT(4),      QRect(691, 151, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE4       },
     {QSTR("制动重大故障"),              D_FONT(4),      QRect(691, 169, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE1       },
     {QSTR("制动供电监视2"),              D_FONT(4),      QRect(691, 187, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE1        },
     {QSTR(""),              D_FONT(4),      QRect(691, 205, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOMTABLE_IO_4STATE1        },

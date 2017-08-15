@@ -726,11 +726,11 @@ void CPage::updateTrain(int nTrainID)
         ((CTrainCtrl*)GetDlgItem(nTrainID))->SetPantograph(2, 1, 0);
     }
 
-    if (ccuPantographUpStateCar2)
+    if (ccuPantographUpStateCar4)
     {
         ((CTrainCtrl*)GetDlgItem(nTrainID))->SetPantograph(4, 1, 0);
     }
-    else if (riomPantographDownStateCar2)
+    else if (riomPantographDownStateCar4)
     {
         ((CTrainCtrl*)GetDlgItem(nTrainID))->SetPantograph(4, 0, 0);
     }
@@ -739,11 +739,11 @@ void CPage::updateTrain(int nTrainID)
         ((CTrainCtrl*)GetDlgItem(nTrainID))->SetPantograph(4, 1, 0);
     }
 
-    if (ccuPantographUpStateCar2)
+    if (ccuPantographUpStateCar7)
     {
         ((CTrainCtrl*)GetDlgItem(nTrainID))->SetPantograph(7, 1, 0);
     }
-    else if (riomPantographDownStateCar2)
+    else if (riomPantographDownStateCar7)
     {
         ((CTrainCtrl*)GetDlgItem(nTrainID))->SetPantograph(7, 0, 0);
     }

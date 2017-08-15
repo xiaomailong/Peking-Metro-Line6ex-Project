@@ -504,7 +504,7 @@ ROMDATA g_PicRom_IOTCTable[] =
 {QSTR("ATC开左门"),              D_FONT(4),      QRect(691, 169, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOTCTABLE_IO_4STATE5       },
 
 // added by Deng Ran on the 14th of August 2017.
-{QSTR("检修激活开关动作"),              D_FONT(4),      QRect(691, 187, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOTCTABLE_IO_4STATE6        },
+{QSTR("检修开关动作"),              D_FONT(4),      QRect(691, 187, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOTCTABLE_IO_4STATE6        },
 
 {QSTR(""),              D_FONT(4),      QRect(691, 205, 88, 17),           Qt::white,                Qt::black,          CONTROL_LABEL,           ID_CIOTCTABLE_IO_4STATE7        },
 {QSTR(""),                    D_FONT(4),      QRect(691, 223, 88, 17),           Qt::cyan,                 Qt::black,          CONTROL_LABEL,           ID_CIOTCTABLE_IO_4STATE8        },
