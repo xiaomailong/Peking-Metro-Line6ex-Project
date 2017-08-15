@@ -1,0 +1,107 @@
+#ifndef PMSSTATEPAGE_H
+#define PMSSTATEPAGE_H
+
+#include "CPage.h"
+#include "DataBuffer.h"
+
+#define _PMS_LABEL_LINE11 0x6501
+#define _PMS_LABEL_LINE12 0x6502
+#define _PMS_LABEL_LINE13 0x6503
+#define _PMS_LABEL_LINE14 0x6504
+
+#define _PMS_LABEL_LINE21 0x6505
+#define _PMS_LABEL_LINE22 0x6506
+#define _PMS_LABEL_LINE23 0x6507
+#define _PMS_LABEL_LINE24 0x6508
+
+#define _PMS_LABEL_LINE31 0x6509
+#define _PMS_LABEL_LINE32 0x650A
+#define _PMS_LABEL_LINE33 0x650B
+#define _PMS_LABEL_LINE34 0x650C
+
+#define _PMS_LABEL_LINE41 0x650D
+#define _PMS_LABEL_LINE42 0x650E
+#define _PMS_LABEL_LINE43 0x650F
+#define _PMS_LABEL_LINE44 0x6510
+
+#define _PMS_LABEL_LINE51 0x6511
+#define _PMS_LABEL_LINE52 0x6512
+#define _PMS_LABEL_LINE53 0x6513
+#define _PMS_LABEL_LINE54 0x6514
+
+#define _PMS_LABEL_LINE61 0x6515
+#define _PMS_LABEL_LINE62 0x6516
+#define _PMS_LABEL_LINE63 0x6517
+#define _PMS_LABEL_LINE64 0x6518
+
+#define _PMS_LABEL_LINE71 0x6519
+#define _PMS_LABEL_LINE72 0x6520
+#define _PMS_LABEL_LINE73 0x6521
+#define _PMS_LABEL_LINE74 0x6522
+
+#define _PMS_LABEL_LINE81 0x6523
+#define _PMS_LABEL_LINE82 0x6524
+#define _PMS_LABEL_LINE83 0x6525
+#define _PMS_LABEL_LINE84 0x6526
+
+#define _PMS_LABEL_LINE91 0x6527
+#define _PMS_LABEL_LINE92 0x6528
+#define _PMS_LABEL_LINE93 0x6529
+#define _PMS_LABEL_LINE94 0x652A
+
+#define _PMS_LABEL_LINEA1 0x652B
+#define _PMS_LABEL_LINEA2 0x652C
+#define _PMS_LABEL_LINEA3 0x652D
+#define _PMS_LABEL_LINEA4 0x652E
+
+#define _PMS_LABEL_LINEB1 0x652F
+#define _PMS_LABEL_LINEB2 0x6530
+#define _PMS_LABEL_LINEB3 0x6531
+#define _PMS_LABEL_LINEB4 0x6532
+
+#define _PMS_LABEL_LINEC1 0x6533
+#define _PMS_LABEL_LINEC11 0x6534
+#define _PMS_LABEL_LINEC12 0x6535
+#define _PMS_LABEL_LINEC13 0x6536
+#define _PMS_LABEL_LINEC14 0x6537
+#define _PMS_LABEL_LINEC15 0x6538
+#define _PMS_LABEL_LINEC16 0x6539
+#define _PMS_LABEL_LINEC17 0x653A
+#define _PMS_LABEL_LINEC18 0x653B
+#define _PMS_LABEL_LINEC21 0x653C
+#define _PMS_LABEL_LINEC22 0x653D
+#define _PMS_LABEL_LINEC23 0x653E
+#define _PMS_LABEL_LINEC24 0x653F
+#define _PMS_LABEL_LINEC25 0x6540
+#define _PMS_LABEL_LINEC26 0x6541
+#define _PMS_LABEL_LINEC27 0x6542
+#define _PMS_LABEL_LINEC28 0x6543
+#define _PMS_LABEL_LINEC31 0x6544
+#define _PMS_LABEL_LINEC32 0x6545
+#define _PMS_LABEL_LINEC33 0x6546
+#define _PMS_LABEL_LINEC34 0x6547
+#define _PMS_LABEL_LINEC35 0x6548
+#define _PMS_LABEL_LINEC36 0x6549
+#define _PMS_LABEL_LINEC37 0x654A
+#define _PMS_LABEL_LINEC38 0x654B
+
+extern vector<CPage*>  g_PageVec;
+
+class PmsStatePage: public CPage
+{
+    DECLEAR_MESSAGE_MAP(PmsStatePage)
+
+public:
+    PmsStatePage();
+    void setControlState(unsigned short int controlId, bool state);
+    void setControlState(unsigned short int controlId, bool state, QString text);
+
+protected:
+    //TODO:declear call back function
+    void OnUpdatePage();
+    void OnShowPage();
+    void OnInitPage();
+    void OnComBtn1Clk();
+};
+
+#endif // PMSSTATEPAGE_H
