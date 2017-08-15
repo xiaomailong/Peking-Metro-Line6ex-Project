@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # Project created by QtCreator 2010-08-24T17:55:41
 # -------------------------------------------------
-TARGET = CNR_BJ6
+TARGET = Peking
 TEMPLATE = app
 QT += network
 #20111102 zlbzeb add begin
