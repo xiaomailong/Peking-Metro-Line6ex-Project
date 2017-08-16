@@ -448,9 +448,9 @@ void CRunStatePage::OnInitPage()
     ((CLabel *)GetDlgItem(ID_PIBRUNSTATE_LABEL_TOWMODE))->SetBorderColor(Qt::white);
 //    ((CLabel *)GetDlgItem(ID_PIBRUNSTATE_LABEL1_ARRIVETERMINALFLAG))->SetBorderColor(Qt::white);
 
-    //   time setting
-//    static int flg = 0;
-//    if(flg != Bit(CCU_HMI_222_9, 8 ) && Bit(CCU_HMI_222_9, 8 )!=0)
+// deleted by Deng Ran on the 16th of August 2017, use ccu time instead of atc time.
+//#ifndef USE_RAND_DATA
+//    if(Bit(CCU_HMI_222_9, 8 ))
 //    {
 //        ATC_time_temp1 = 2000+CCU_HMI_221_10%256;
 //        ATC_time_temp2 = CCU_HMI_221_10/256;
@@ -460,22 +460,7 @@ void CRunStatePage::OnInitPage()
 //        ATC_time_temp6 = CCU_HMI_221_12/256;
 //        SetSystemTime(ATC_time_temp1,ATC_time_temp2,ATC_time_temp3,ATC_time_temp4,ATC_time_temp5,ATC_time_temp6);
 //    }
-//    flg = Bit(CCU_HMI_222_9, 8 );
-
-#ifndef USE_RAND_DATA
-    if(Bit(CCU_HMI_222_9, 8 ))
-    {
-        ATC_time_temp1 = 2000+CCU_HMI_221_10%256;
-        ATC_time_temp2 = CCU_HMI_221_10/256;
-        ATC_time_temp3 = CCU_HMI_221_11%256;
-        ATC_time_temp4 = CCU_HMI_221_11/256;
-        ATC_time_temp5 = CCU_HMI_221_12%256;
-        ATC_time_temp6 = CCU_HMI_221_12/256;
-        SetSystemTime(ATC_time_temp1,ATC_time_temp2,ATC_time_temp3,ATC_time_temp4,ATC_time_temp5,ATC_time_temp6);
-    }
-#endif
-
-
+//#endif
 }
 
 void CRunStatePage::OnShowPage()

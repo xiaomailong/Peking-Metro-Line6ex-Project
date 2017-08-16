@@ -308,6 +308,8 @@ void Dialog::changeEvent(QEvent *e)
 
 void Dialog::OnUpdateData()
 {
+    static unsigned short int counter = 0;
+
     CPage* pPage = g_PageVec[CGlobal::m_nCurPageIndex];
     if (pPage == NULL)
         return;
@@ -375,6 +377,20 @@ void Dialog::OnUpdateData()
 
     createSendData();
     this->updateSignals();
+
+    // about 30s
+    if (counter / 70 == 0)
+    {
+        this->synchronizeTimeWithCcu();
+    }
+
+    // about 1.2s
+    if (counter / 3 == 0)
+    {
+        ccuOnline = this->checkCcuOnline(ccuLifeSignal);
+    }
+
+    counter = (counter ++) / 1000;
 }
 
 void Dialog::OnUpdateDate()
@@ -6432,4 +6448,70 @@ void Dialog::updateSignals()
     riomPantographDownStateCar2 = getBool(0x120, 0, 7);
     riomPantographDownStateCar7 = getBool(0x170, 0, 7);
     riomPantographDownStateCar4 = getBool(0x140, 0, 7);
+
+    // ccu signals
+    ccuYear = getUnsignedChar(0x221, 18);
+    ccuMonth = getUnsignedChar(0x221, 19);
+    ccuDay = getUnsignedChar(0x221, 20);
+    ccuHour = getUnsignedChar(0x221, 21);
+    ccuMinute = getUnsignedChar(0x221, 22);
+    ccuSecond = getUnsignedChar(0x0221, 23);
+    ccuLifeSignal = getUnsignedInt(0x220, 0);
+}
+
+bool Dialog::checkCcuOnline(unsigned short int signal)
+{
+    unsigned short int temp;
+
+    if (temp == signal)
+    {
+        return false;
+    }
+    else
+    {
+        temp = signal;
+
+        return true;
+    }
+}
+
+void Dialog::synchronizeTimeWithCcu()
+{
+    if (ccuOnline)
+    {
+        return;
+    }
+    else if (false == QDate::isValid(2000 + ccuYear, ccuMonth, ccuDay))
+    {
+        return;
+    }
+    else if (false == QTime::isValid(ccuHour, ccuMinute, ccuSecond))
+    {
+        return;
+    }
+
+    QDateTime ccuTime(QDate(2000 + ccuYear, ccuMonth, ccuDay),
+                            QTime(ccuHour, ccuMinute, ccuSecond));
+
+    if (abs((long)(ccuTime.toTime_t() - QDateTime::currentDateTime().toTime_t()) > 5))
+    {
+        QDate date(2000 + ccuYear, ccuMonth, ccuDay);
+        QTime time(ccuHour, ccuMinute, ccuSecond);
+
+        QString dateString = date.toString("yyyy-MM-dd");
+        QString timeString = time.toString("hh:mm:ss");
+        QString command = "date -s \"";
+
+        dateString.replace(QRegExp("-"), "");
+        timeString.replace(QRegExp("-"), ":");
+        command = command + dateString + " " + timeString + "\"";
+
+        const char *c = command.toAscii().data();
+
+        // linux command
+        system(c);
+
+        // write bios
+        system("hwclock -w");
+    }
 }

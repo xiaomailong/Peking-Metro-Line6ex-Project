@@ -155,6 +155,8 @@ protected:
     void createSendData();
     void CheckLifeSignalChange();
     bool CheckLifeSignalValue(WORD &temp, WORD data);
+    void synchronizeTimeWithCcu();
+    bool checkCcuOnline(unsigned short int signal);
 
 signals:
     void setDataSignal( uchar *data, int len );

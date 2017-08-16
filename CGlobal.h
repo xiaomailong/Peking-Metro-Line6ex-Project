@@ -2062,6 +2062,11 @@ extern bool riomIesPantographCar2, riomIesPantographCar7;
 extern bool riomBrakePowerMonitorCar4, riomBrakePowerMonitorCar5;
 extern bool riomPantographDownStateCar2, riomPantographDownStateCar4, riomPantographDownStateCar7;
 
+// added by Deng Ran on the 16th of August 2017.
+extern int ccuYear, ccuMonth, ccuDay, ccuHour, ccuMinute, ccuSecond;
+extern unsigned short int ccuLifeSignal;
+extern bool ccuOnline;
+
 // added by Deng Ran on the 1st of July 2017.
 extern bool ccuTdsOnlineCar1, ccuTdsOnlineCar8;
 extern bool ccuPmsOnlineCar2, ccuPmsOnlineCar4, ccuPmsOnlineCar7;

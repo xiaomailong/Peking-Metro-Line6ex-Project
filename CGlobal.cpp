@@ -1566,6 +1566,11 @@ WORD g_dataBuffer_UDP_2[64];
 // added by Deng Ran on the 31st of July 2017.
 QMap<int, struct crrc_port_data *> mvbPortData;
 
+// added by Deng Ran on the 16th of August 2017.
+int ccuYear, ccuMonth, ccuDay, ccuHour, ccuMinute, ccuSecond;
+unsigned short int ccuLifeSignal;
+bool ccuOnline;
+
 // added by Deng Ran on the 1st of July 2017.
 bool ccuTdsOnlineCar1, ccuTdsOnlineCar8;
 bool ccuPmsOnlineCar2, ccuPmsOnlineCar4, ccuPmsOnlineCar7;
