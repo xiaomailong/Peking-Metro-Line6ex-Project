@@ -1653,6 +1653,9 @@ bool pmsPantographArcCar7, pmsPantographTemperatureAbnormalCar7, pmsDeviceTemper
 bool pmsPantographCamera1AbnormalCar7, pmsPantographCamera2AbnormalCar7, pmsPantographCamera3AbnormalCar7, pmsPantographCamera4AbnormalCar7;
 bool pmsPantographCamera5AbnormalCar7, pmsPantographCamera6AbnormalCar7, pmsPantographCamera7AbnormalCar7, pmsPantographCamera8AbnormalCar7;
 
+// added by Deng Ran on the 17th of August 2017.
+QMutex mutex;
+
 BYTE sendData[128];
 BYTE test_tempdata[128];
 BYTE report[128];
@@ -2052,7 +2055,7 @@ bool getBool(unsigned short int port, unsigned short int byteOffset, unsigned sh
     }
     else
     {
-        qDebug() << "there no port in the databse or byte offset is too long" << port;
+        // qDebug() << "there no port in the databse or byte offset is too long" << port;
 
         return false;
     }
@@ -2063,7 +2066,7 @@ bool getBool(unsigned short int port, unsigned short int byteOffset, unsigned sh
     }
     else
     {
-        qDebug() << "the bit offset is too long" << port;
+        // qDebug() << "the bit offset is too long" << port;
 
         return false;
     }
@@ -2104,7 +2107,7 @@ unsigned char getUnsignedChar(unsigned short int port, unsigned short int byteOf
     }
     else
     {
-        qDebug() << "there no port in the databse or byte offset is too long" << port;
+        // qDebug() << "there no port in the databse or byte offset is too long" << port;
 
         return 0;
     }
@@ -2136,7 +2139,7 @@ signed char getSignedChar(unsigned short int port, unsigned short int byteOffset
     }
     else
     {
-        qDebug() << "there no port in the databse or byte offset is too long" << port;
+        // qDebug() << "there no port in the databse or byte offset is too long" << port;
 
         return 0;
     }
@@ -2160,7 +2163,7 @@ unsigned short int getUnsignedInt(unsigned short int port, unsigned short int by
     }
     else
     {
-        qDebug() << "there no port in the databse or byte offset is too long" << port;
+        // qDebug() << "there no port in the databse or byte offset is too long" << port;
 
         return 0;
     }
@@ -2171,7 +2174,7 @@ unsigned short int getUnsignedInt(unsigned short int port, unsigned short int by
 // unsigned short int port: the port in data stream
 // unsigned short int byteOffset: the byte offset in data stream
 signed short int getSignedInt(unsigned short int port, unsigned short int byteOffset)
-{
+{    
     unsigned char *pointer = NULL;
     signed short int value = 0;
 
@@ -2184,8 +2187,25 @@ signed short int getSignedInt(unsigned short int port, unsigned short int byteOf
     }
     else
     {
-        qDebug() << "there no port in the databse or byte offset is too long" << port;
+        // qDebug() << "there no port in the databse or byte offset is too long" << port;
 
         return 0;
+    }
+}
+
+// added by Deng Ran on the 21st of August of 2017
+// paramerters
+// unsigned short int port: the port in data stream
+unsigned short int getPortRefreshTime(unsigned short int port)
+{
+    if (mvbPortData.contains(port))
+    {
+        return 65535 - mvbPortData[port]->cycle;
+    }
+    else
+    {
+        // qDebug() << "there no port in the databse or byte offset is too long" << port;
+
+        return 65535;
     }
 }

@@ -23,6 +23,7 @@ extern vector<CPage*>  g_PageVec;
 #define ID_PIBDM_LABEL_MVBorUDP      0x000B
 #define ID_PIBDM_BUTTON_SCREENRECTIFY      0x000C
 #define ID_PIBDM_BUTTON_HMI_POSITION_SET 0x000D
+#define ID_BUTTON_ALL_PORTS 0x000E
 
 
 class CDebugMainPage : public CPage
@@ -47,6 +48,7 @@ protected:
     void OnBtn7Clk();
     void OnBtn8Clk();
     void buttonHmiPositionSetClick();
+    void buttonAllPortsClick();
 };
 
 #endif // CDebugMainPage_H

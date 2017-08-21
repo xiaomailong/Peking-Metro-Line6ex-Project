@@ -184,6 +184,9 @@ extern int g_RsfdsStatePageRomLen;
 extern ROMDATA g_PicRom_PmsStatePage[];
 extern int g_PmsStatePageRomLen;
 
+extern ROMDATA g_PicRom_AllPorts[];
+extern int g_AllPortsRomLen;
+
 //Control id:
 
 // common page header control id

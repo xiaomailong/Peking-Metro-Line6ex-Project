@@ -76,5 +76,6 @@ ROMINFO g_PicRom[] =
     {g_PicRom_HmiPositionSet, g_HmiPositionSetLen},
     {g_PicRom_RsfsdStatePage, g_RsfdsStatePageRomLen},
     {g_PicRom_PmsStatePage, g_PmsStatePageRomLen},
+    {g_PicRom_AllPorts, g_AllPortsRomLen},
 } ;
 int g_nTotalRomNum = sizeof(g_PicRom)/sizeof(ROMINFO);

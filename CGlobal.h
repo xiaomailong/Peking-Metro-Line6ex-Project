@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "cfaultscommonprocess.h"
 #include "PixyMvbLib.h"
+#include <QMutex>
 
 using namespace std;
 
@@ -2080,6 +2081,7 @@ extern unsigned char getUnsignedChar(unsigned short int port, unsigned short int
 extern signed char getSignedChar(unsigned short int port, unsigned short int byteOffset);
 extern unsigned short int getUnsignedInt(unsigned short int port, unsigned short int byteOffset);
 extern signed short int getSignedInt(unsigned short int port, unsigned short int byteOffset);
+unsigned short int getPortRefreshTime(unsigned short int port);
 
 // added by Deng Ran on the 02nd of August 2017.
 extern bool tdsAxis1MajorFaultCar1, tdsAxis2MajorFaultCar1, tdsAxis3MajorFaultCar1, tdsAxis4MajorFaultCar1;
@@ -2133,5 +2135,8 @@ extern bool tdsControllerFaultCar5, tdsControllerFaultCar6, tdsControllerFaultCa
 extern bool tdsTrustCar1, tdsTrustCar8;
 extern bool tdsWorkModeCar1, tdsWorkModeCar8;
 extern QString tdsSoftwareVersionCar1, tdsSoftwareVersionCar8;
+
+// added by Deng Ran on the 17th of August 2017.
+extern QMutex mutex;
 
 #endif // CGLOBAL_H

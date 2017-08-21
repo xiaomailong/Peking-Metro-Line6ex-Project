@@ -18,8 +18,12 @@ ROMDATA g_PicRom_DebugMain[] =
     {QSTR("屏幕校准"),                D_FONT_BOLD(8),      QRect(195,  170, 120,  38),          Qt::black,               Qt::gray,                CONTROL_BUTTON,           ID_PIBDM_BUTTON_SCREENRECTIFY     },
     {QSTR("RIOM详细信息"),            D_FONT_BOLD(8),      QRect(335, 170, 120,  38),          Qt::black,               Qt::gray,                CONTROL_BUTTON,           ID_PIBDM_BUTTON_RIOMDEBUGINFO  },
     {QSTR("HMI位置设置"),            D_FONT_BOLD(8),      QRect(475, 170, 120,  38),          Qt::black,               Qt::gray,                CONTROL_BUTTON,           ID_PIBDM_BUTTON_HMI_POSITION_SET},
+
+    {QSTR("全部端口"), D_FONT_BOLD(8), QRect(55, 170 + 90, 120,  38), Qt::black, Qt::gray, CONTROL_BUTTON, ID_BUTTON_ALL_PORTS},
+
     {QSTR("返   回"),                D_FONT_BOLD(8),      QRect(600, 370, 120,  38),          Qt::black,               Qt::gray,                CONTROL_BUTTON,           ID_PIBDM_BUTTON_RETURN         },
 
+    // deleted by Deng Ran on the 08th of August 2017.
     // {QSTR("显示屏内部温度"),         D_FONT_BOLD(8),      QRect( 30, 295, 230, 30),          Qt::white,                Qt::transparent,          CONTROL_LABEL,           ID_IGNORE         },
     // {QSTR(""),                     D_FONT_BOLD(6),      QRect( 260,295, 80, 30),           Qt::white,                Qt::black,                CONTROL_LABEL,           ID_PIBDM_LABEL_TEMP_IN_HMI                       },
     // {QSTR("显示屏所处位置"),         D_FONT_BOLD(8),      QRect( 30, 325, 230, 30),          Qt::white,                Qt::transparent,          CONTROL_LABEL,           ID_IGNORE         },
@@ -47,11 +51,11 @@ BEGIN_MESSAGE_MAP(CDebugMainPage,CPage)
         ON_BTNCLK(ID_PIBDM_BUTTON_RIOMDEBUGINFO, OnBtn7Clk)
         ON_BTNCLK(ID_PIBDM_BUTTON_SCREENRECTIFY, OnBtn8Clk)
         ON_BTNCLK(ID_PIBDM_BUTTON_HMI_POSITION_SET, buttonHmiPositionSetClick)
+        ON_BTNCLK(ID_BUTTON_ALL_PORTS, buttonAllPortsClick)
 END_MESSAGE_MAP()
 
 CDebugMainPage::CDebugMainPage()
 {
-
 }
 
 void CDebugMainPage::OnUpdatePage()
@@ -151,5 +155,8 @@ void CDebugMainPage::OnBtn8Clk()
     QProcess::execute(program);
 }
 
-
-
+// added by Deng Ran on the 17th of August 2017.
+void CDebugMainPage::buttonAllPortsClick()
+{
+    this->ChangePage(PAGE_INDEX_ALL_PORTS_PAGE);
+}

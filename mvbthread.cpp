@@ -502,6 +502,8 @@ void MvbThread::render()
 // added by Deng Ran on the 31th of July 2017.
 void MvbThread::copyPort(int port, PIXYMVB_Data data, unsigned short cycle)
 {
+    mutex.lock();
+
     if (mvbPortData.contains(port) == false)
     {
         mvbPortData.insert(port, new crrc_port_data(cycle));
@@ -513,6 +515,8 @@ void MvbThread::copyPort(int port, PIXYMVB_Data data, unsigned short cycle)
     {
         mvbPortData[port]->data[i] = data[i];
     }
+
+    mutex.unlock();
 }
 
 // changed by Deng Ran on the 31th of July 2017.
@@ -564,11 +568,15 @@ void MvbThread::run()
     #ifdef DEBUG
                 writeDebugLog( "pixymvb_PutPort", RetVal );
     #endif
+
                 pixymvb_PutPort(0x201, (PIXYMVB_Data *) &(srcPortData201[0]));
+                this->copyPort(0x110, srcPortData201, 65535 - 256);
+
                 pixymvb_PutPort(0x202, (PIXYMVB_Data *) &(srcPortData202[0]));
+                this->copyPort(0x110, srcPortData202, 65535 - 256);
+
                 pixymvb_PutPort(0x203, (PIXYMVB_Data *) &(srcPortData203[0]));
-
-
+                this->copyPort(0x110, srcPortData203, 65535 - 256);
             }
             else
             {   // HMI tc2 set src data
@@ -598,8 +606,13 @@ void MvbThread::run()
                     writeDebugLog( "pixymvb_PutPort", RetVal );
         #endif
                     pixymvb_PutPort(0x281, (PIXYMVB_Data *) &(srcPortData281[0]));
+                    this->copyPort(0x110, srcPortData281, 65535 - 256);
+
                     pixymvb_PutPort(0x282, (PIXYMVB_Data *) &(srcPortData282[0]));
+                    this->copyPort(0x110, srcPortData282, 65535 - 256);
+
                     pixymvb_PutPort(0x283, (PIXYMVB_Data *) &(srcPortData283[0]));
+                    this->copyPort(0x110, srcPortData283, 65535 - 256);
                 }
                 else
                 {

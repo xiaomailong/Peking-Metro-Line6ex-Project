@@ -193,6 +193,7 @@ BEGIN_PAGE_MANAGE()
         ADD_PAGE(HmiPositionSetPage, ROM_INDEX(PAGE_INDEX_HMI_POSITION_SET_PAGE))
         ADD_PAGE(RsfsdStatePage, ROM_INDEX(PAGE_INDEX_RSFDS_STATE_PAGE))
         ADD_PAGE(PmsStatePage, ROM_INDEX(PAGE_INDEX_PMS_STATE_PAGE))
+        ADD_PAGE(AllPortsPage, ROM_INDEX(PAGE_INDEX_ALL_PORTS_PAGE))
 END_PAGE_MANAGE()
 
 
@@ -5995,6 +5996,8 @@ void Dialog::OnLogTimer()
 // added by Deng Ran on the 01st of August 2017.
 void Dialog::updateSignals()
 {
+    mutex.lock();
+
     ccuTdsOnlineCar1 = getBool(0x222, 31, 0);
     ccuTdsOnlineCar8 = getBool(0x222, 31, 1);
 
@@ -6457,6 +6460,8 @@ void Dialog::updateSignals()
     ccuMinute = getUnsignedChar(0x221, 22);
     ccuSecond = getUnsignedChar(0x0221, 23);
     ccuLifeSignal = getUnsignedInt(0x220, 0);
+
+    mutex.unlock();
 }
 
 bool Dialog::checkCcuOnline(unsigned short int signal)

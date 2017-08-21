@@ -83,11 +83,12 @@
 #include "FASPage.h"
 #include "CRefreshTimePage2.h"
 #include "CFaultPageHelp.h"
+
+// added by Deng Ran on the 18th of August 2017
+#include "allportspage.h"
+
 #ifdef USE_MVB_DATA
 #include "mvbthread.h"
-
-
-
 #endif
 
 namespace Ui {
