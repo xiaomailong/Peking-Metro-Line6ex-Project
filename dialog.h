@@ -86,6 +86,7 @@
 
 // added by Deng Ran on the 18th of August 2017
 #include "allportspage.h"
+#include "cversioninfopage2.h"
 
 #ifdef USE_MVB_DATA
 #include "mvbthread.h"
@@ -158,6 +159,7 @@ protected:
     bool CheckLifeSignalValue(WORD &temp, WORD data);
     void synchronizeTimeWithCcu();
     bool checkCcuOnline(unsigned short int signal);
+    void setUnsignedInt(unsigned short int *pointer, unsigned short int bitOffset, bool value) const;
 
 signals:
     void setDataSignal( uchar *data, int len );

@@ -549,7 +549,7 @@ extern bool g_fas2_comm_err_flg;
 extern bool g_CCU1_comm_err_flg;
 extern bool g_CCU2_comm_err_flg;
 
-#define D_DATA_BUFFER_SIZE       4000
+#define D_DATA_BUFFER_SIZE 4000
 
 extern WORD g_dataBuffer[D_DATA_BUFFER_SIZE];
 extern WORD g_dataBuffer_MVB[D_DATA_BUFFER_SIZE];
@@ -2082,6 +2082,17 @@ extern signed char getSignedChar(unsigned short int port, unsigned short int byt
 extern unsigned short int getUnsignedInt(unsigned short int port, unsigned short int byteOffset);
 extern signed short int getSignedInt(unsigned short int port, unsigned short int byteOffset);
 unsigned short int getPortRefreshTime(unsigned short int port);
+
+// added by Deng Ran on the
+extern bool tdsInternalBusError, tdsSystemSlightFault, tdsSystemMinorFault, tdsSystemMajorFault;
+extern bool tdsProcessorFaultCar1, tdsSensorFaultCar1;
+extern bool tdsProcessorFaultCar2, tdsSensorFaultCar2;
+extern bool tdsProcessorFaultCar3, tdsSensorFaultCar3;
+extern bool tdsProcessorFaultCar4, tdsSensorFaultCar4;
+extern bool tdsProcessorFaultCar5, tdsSensorFaultCar5;
+extern bool tdsProcessorFaultCar6, tdsSensorFaultCar6;
+extern bool tdsProcessorFaultCar7, tdsSensorFaultCar7;
+extern bool tdsProcessorFaultCar8, tdsSensorFaultCar8;
 
 // added by Deng Ran on the 02nd of August 2017.
 extern bool tdsAxis1MajorFaultCar1, tdsAxis2MajorFaultCar1, tdsAxis3MajorFaultCar1, tdsAxis4MajorFaultCar1;

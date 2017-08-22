@@ -757,6 +757,115 @@ ST_FAULT_INFO g_faultsinforom[] =
 //    {0xA304,QSTR("VRS严重故障"),                                        QSTR("VRS严重故障")},
 //    {0xA305,QSTR("车载应答器天线轻微故障"),                                QSTR("无")},
 //    {0xA306,QSTR("车载应答器天线严重故障"),                                QSTR("车载应答器天线严重故障")},
+
+    // added by Deng Ran on the 21st of August 2017.
+    {0xC201, QSTR("TC1车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC202, QSTR("TC1车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC203, QSTR("TC1车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC204, QSTR("TC1车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC205, QSTR("MP1车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC206, QSTR("MP1车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC207, QSTR("MP1车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC208, QSTR("MP1车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC209, QSTR("M1车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC210, QSTR("M1车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC211, QSTR("M1车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC212, QSTR("M1车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC213, QSTR("MP3车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC214, QSTR("MP3车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC215, QSTR("MP3车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC216, QSTR("MP3车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC217, QSTR("M3车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC218, QSTR("M3车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC219, QSTR("M3车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC220, QSTR("M3车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC221, QSTR("M2车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC222, QSTR("M2车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC223, QSTR("M2车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC224, QSTR("M2车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC225, QSTR("MP2车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC226, QSTR("MP2车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC227, QSTR("MP2车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC228, QSTR("MP2车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC229, QSTR("TC2车1轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC230, QSTR("TC2车2轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC231, QSTR("TC2车3轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC232, QSTR("TC2车4轴中等故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    // deleted by Deng Ran on the 21st of August 2017.
+    // {0xC301, QSTR("RSFDS系统轻微故障"), QSTR("运营至终点回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC302, QSTR("内部总线通信异常"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC303, QSTR("TC1车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC304, QSTR("TC1车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC305, QSTR("TC1车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC306, QSTR("TC1车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC307, QSTR("TC1车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC308, QSTR("TC1车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC309, QSTR("TC1车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC310, QSTR("MP1车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC311, QSTR("MP1车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC312, QSTR("MP1车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC313, QSTR("MP1车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC314, QSTR("MP1车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC315, QSTR("MP1车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC316, QSTR("MP1车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC317, QSTR("M1车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC318, QSTR("M1车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC319, QSTR("M1车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC320, QSTR("M1车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC321, QSTR("M1车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC322, QSTR("M1车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC323, QSTR("M1车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC324, QSTR("MP3车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC325, QSTR("MP3车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC326, QSTR("MP3车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC327, QSTR("MP3车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC328, QSTR("MP3车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC329, QSTR("MP3车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC330, QSTR("MP3车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC331, QSTR("M3车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC332, QSTR("M3车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC333, QSTR("M3车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC334, QSTR("M3车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC335, QSTR("M3车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC336, QSTR("M3车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC337, QSTR("M3车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC338, QSTR("M2车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC339, QSTR("M2车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC340, QSTR("M2车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC341, QSTR("M2车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC342, QSTR("M2车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC343, QSTR("M2车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC344, QSTR("M2车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC345, QSTR("MP2车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC346, QSTR("MP2车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC347, QSTR("MP2车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC348, QSTR("MP2车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC349, QSTR("MP2车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC350, QSTR("MP2车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC351, QSTR("MP2车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+
+    {0xC352, QSTR("TC2车1轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC353, QSTR("TC2车2轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC354, QSTR("TC2车3轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC355, QSTR("TC2车4轴轻微故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC356, QSTR("TC2车诊断仪故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC357, QSTR("TC2车前置处理器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
+    {0xC358, QSTR("TC2车传感器故障"), QSTR("安排完成当日行车任务后回库检修\n1、下载数据\n2、对故障位置检查并视情维修")},
 };
 
 int g_faultsInfoRomLen = sizeof(g_faultsinforom)/sizeof(ST_FAULT_INFO);
@@ -3607,9 +3716,114 @@ FAULTS_ROM_DATA g_faultsrom[]={
     {0xB253,  2,  D_POS_A, 3461,   bit10,   false,  false, false,  E_FAULTS_CATEGORY_FAS    },
     {0xB254,  2,  D_POS_A, 3461,   bit11,   false,  false, false,  E_FAULTS_CATEGORY_FAS    },
 
+    // added by Deng Ran on the 21st of August 2017.
+    {0xC201, 2, D_POS_A, 3800, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC202, 2, D_POS_A, 3800, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC203, 2, D_POS_A, 3800, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC204, 2, D_POS_A, 3800, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
+    {0xC205, 2, D_POS_B, 3800, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC206, 2, D_POS_B, 3800, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC207, 2, D_POS_B, 3800, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC208, 2, D_POS_B, 3800, bit7, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
+    {0xC209, 2, D_POS_C, 3800, bit8, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC210, 2, D_POS_C, 3800, bit9, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC211, 2, D_POS_C, 3800, bit10, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC212, 2, D_POS_C, 3800, bit11, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
+    {0xC213, 2, D_POS_D, 3800, bit12, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC214, 2, D_POS_D, 3800, bit13, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC215, 2, D_POS_D, 3800, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC216, 2, D_POS_D, 3800, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC217, 2, D_POS_E, 3801, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC218, 2, D_POS_E, 3801, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC219, 2, D_POS_E, 3801, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC220, 2, D_POS_E, 3801, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC221, 2, D_POS_F, 3801, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC222, 2, D_POS_F, 3801, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC223, 2, D_POS_F, 3801, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC224, 2, D_POS_F, 3801, bit7, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC225, 2, D_POS_G, 3801, bit8, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC226, 2, D_POS_G, 3801, bit9, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC227, 2, D_POS_G, 3801, bit10, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC228, 2, D_POS_G, 3801, bit11, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC229, 2, D_POS_H, 3801, bit12, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC230, 2, D_POS_H, 3801, bit13, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC231, 2, D_POS_H, 3801, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC232, 2, D_POS_H, 3801, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    // deleted by Deng Ran on the 21st of August 2017.
+    {0xC301, 2, D_POS_A, 3802, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC302, 2, D_POS_A, 3802, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC303, 2, D_POS_A, 3803, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC304, 2, D_POS_A, 3803, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC305, 2, D_POS_A, 3803, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC306, 2, D_POS_A, 3803, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC307, 2, D_POS_A, 3803, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC308, 2, D_POS_A, 3803, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC309, 2, D_POS_A, 3803, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC310, 2, D_POS_B, 3804, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC311, 2, D_POS_B, 3804, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC312, 2, D_POS_B, 3804, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC313, 2, D_POS_B, 3804, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC314, 2, D_POS_B, 3804, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC315, 2, D_POS_B, 3804, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC316, 2, D_POS_B, 3804, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC317, 2, D_POS_C, 3805, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC318, 2, D_POS_C, 3805, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC319, 2, D_POS_C, 3805, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC320, 2, D_POS_C, 3805, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC321, 2, D_POS_C, 3805, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC322, 2, D_POS_C, 3805, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC323, 2, D_POS_C, 3805, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC324, 2, D_POS_D, 3806, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC325, 2, D_POS_D, 3806, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC326, 2, D_POS_D, 3806, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC327, 2, D_POS_D, 3806, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC328, 2, D_POS_D, 3806, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC329, 2, D_POS_D, 3806, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC330, 2, D_POS_D, 3806, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC331, 2, D_POS_E, 3807, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC332, 2, D_POS_E, 3807, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC333, 2, D_POS_E, 3807, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC334, 2, D_POS_E, 3807, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC335, 2, D_POS_E, 3807, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC336, 2, D_POS_E, 3807, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC337, 2, D_POS_E, 3807, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC338, 2, D_POS_F, 3808, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC339, 2, D_POS_F, 3808, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC340, 2, D_POS_F, 3808, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC341, 2, D_POS_F, 3808, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC342, 2, D_POS_F, 3808, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC343, 2, D_POS_F, 3808, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC344, 2, D_POS_F, 3808, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC345, 2, D_POS_G, 3809, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC346, 2, D_POS_G, 3809, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC347, 2, D_POS_G, 3809, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC348, 2, D_POS_G, 3809, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC349, 2, D_POS_G, 3809, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC350, 2, D_POS_G, 3809, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC351, 2, D_POS_G, 3809, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+
+    {0xC352, 2, D_POS_H, 3810, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC353, 2, D_POS_H, 3810, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC354, 2, D_POS_H, 3810, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC355, 2, D_POS_H, 3810, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC356, 2, D_POS_H, 3810, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC357, 2, D_POS_H, 3810, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC358, 2, D_POS_H, 3810, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 };
 
 int g_faultsRomLen = sizeof(g_faultsrom)/sizeof(FAULTS_ROM_DATA);

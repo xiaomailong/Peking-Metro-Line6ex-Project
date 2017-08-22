@@ -128,14 +128,6 @@ extern vector<CPage*>  g_PageVec;
 #define ID_PIBVIP_LABEL_HVAC_GW7              0x0070
 #define ID_PIBVIP_LABEL_HVAC_GW8              0x0071
 
-
-
-
-
-
-
-
-
 class CVersionInfoPage : public CPage
 {
     DECLEAR_MESSAGE_MAP(CVersionInfoPage)

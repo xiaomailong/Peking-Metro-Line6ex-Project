@@ -1581,6 +1581,17 @@ bool ccuPantographUpStateCar2, ccuPantographUpStateCar4, ccuPantographUpStateCar
 // added by Deng Ran on the 14th of August 2017.
 bool riomPantographDownStateCar2, riomPantographDownStateCar4, riomPantographDownStateCar7;
 
+// added by Deng Ran on the
+bool tdsInternalBusError, tdsSystemSlightFault, tdsSystemMinorFault, tdsSystemMajorFault;
+bool tdsProcessorFaultCar1, tdsSensorFaultCar1;
+bool tdsProcessorFaultCar2, tdsSensorFaultCar2;
+bool tdsProcessorFaultCar3, tdsSensorFaultCar3;
+bool tdsProcessorFaultCar4, tdsSensorFaultCar4;
+bool tdsProcessorFaultCar5, tdsSensorFaultCar5;
+bool tdsProcessorFaultCar6, tdsSensorFaultCar6;
+bool tdsProcessorFaultCar7, tdsSensorFaultCar7;
+bool tdsProcessorFaultCar8, tdsSensorFaultCar8;
+
 // added by Deng Ran on the 02nd of August 2017.
 bool tdsAxis1MajorFaultCar1, tdsAxis2MajorFaultCar1, tdsAxis3MajorFaultCar1, tdsAxis4MajorFaultCar1;
 bool tdsAxis1MajorFaultCar2, tdsAxis2MajorFaultCar2, tdsAxis3MajorFaultCar2, tdsAxis4MajorFaultCar2;

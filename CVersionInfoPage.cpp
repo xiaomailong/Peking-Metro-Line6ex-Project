@@ -362,6 +362,7 @@ void CVersionInfoPage::OnInitPage()
 void CVersionInfoPage::OnShowPage()
 {
     ((CButton *)GetDlgItem(IDLB_COM_BTN1))->SetCtrlText(QSTR("返   回"));
+    ((CButton *)GetDlgItem(IDLB_COM_BTN6))->SetCtrlText(QSTR("下一页"));
 }
 
 void CVersionInfoPage::OnComBtn1Clk()
@@ -391,7 +392,7 @@ void CVersionInfoPage::OnComBtn5Clk()
 
 void CVersionInfoPage::OnComBtn6Clk()
 {
-
+    this->ChangePage(PAGE_INDEX_VERSION_INFO2);
 }
 
 void CVersionInfoPage::UpdateVersionIofo()

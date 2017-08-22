@@ -130,6 +130,8 @@ extern ROMDATA g_PicRom_DebugMain[];
 extern int g_DebugMainRomLen;
 extern ROMDATA g_PicRom_VersionInfo[];
 extern int g_VersionInfoRomLen;
+extern ROMDATA g_PicRom_VersionInfo2[];
+extern int g_VersionInfo2RomLen;
 extern ROMDATA g_PicRom_VialSignal[];
 extern int g_VialSignalRomLen;
 extern ROMDATA g_PicRom_RIOMDebug[];
