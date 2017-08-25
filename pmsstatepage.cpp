@@ -112,7 +112,7 @@ void PmsStatePage::OnUpdatePage()
     this->setControlState(_PMS_LABEL_LINE13, pmsPantographCleatDeficiencyCar4, QString(""));
     this->setControlState(_PMS_LABEL_LINE14, pmsPantographCleatDeficiencyCar7, QString(""));
 
-    ((CLabel *)GetDlgItem(_PMS_LABEL_LINE21))->SetCtrlText(QSTR("受电弓羊角变形"));
+    ((CLabel *)GetDlgItem(_PMS_LABEL_LINE21))->SetCtrlText(QSTR("受电弓羊角严重变形"));
     this->setControlState(_PMS_LABEL_LINE22, pmsPantographCleatOutOfShapeCar2, QString(""));
     this->setControlState(_PMS_LABEL_LINE23, pmsPantographCleatOutOfShapeCar4, QString(""));
     this->setControlState(_PMS_LABEL_LINE24, pmsPantographCleatOutOfShapeCar7, QString(""));

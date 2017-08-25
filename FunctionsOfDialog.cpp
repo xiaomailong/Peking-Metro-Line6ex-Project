@@ -635,6 +635,67 @@ void Dialog::updateSignals()
     this->setUnsignedInt(g_dataBuffer + 3810, 4, tdsControllerFaultCar8);
     this->setUnsignedInt(g_dataBuffer + 3810, 5, tdsProcessorFaultCar8);
     this->setUnsignedInt(g_dataBuffer + 3810, 6, tdsSensorFaultCar8);
+
+    // the fault signals of pms
+    this->setUnsignedInt(g_dataBuffer + 3820, 0, pmsPantographCleatDeficiencyCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 1, pmsPantographBlockCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 2, pmsCarbonFallOffCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 3, pmsPantographCleatOutOfShapeCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 4, pmsPantographlittleOutOfShapeCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 5, pmsPantographSlideAbrasionCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 6, pmsPantographSlideMajorGapCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 7, pmsPantographArcCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 8, pmsPantographTemperatureAbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 9, pmsPantographCamera1AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 10, pmsPantographCamera2AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 11, pmsPantographCamera3AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 12, pmsPantographCamera4AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 13, pmsPantographCamera5AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 14, pmsPantographCamera6AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3820, 15, pmsPantographCamera7AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3821, 0, pmsPantographCamera8AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3821, 1, pmsDeviceTemperatureAbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 3821, 2, pmsControlSystemTemperatureAbnormalCar2);
+
+    this->setUnsignedInt(g_dataBuffer + 3822, 0, pmsPantographCleatDeficiencyCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 1, pmsPantographBlockCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 2, pmsCarbonFallOffCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 3, pmsPantographCleatOutOfShapeCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 4, pmsPantographlittleOutOfShapeCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 5, pmsPantographSlideAbrasionCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 6, pmsPantographSlideMajorGapCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 7, pmsPantographArcCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 8, pmsPantographTemperatureAbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 9, pmsPantographCamera1AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 10, pmsPantographCamera2AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 11, pmsPantographCamera3AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 12, pmsPantographCamera4AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 13, pmsPantographCamera5AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 14, pmsPantographCamera6AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3822, 15, pmsPantographCamera7AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3823, 0, pmsPantographCamera8AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3823, 1, pmsDeviceTemperatureAbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 3823, 2, pmsControlSystemTemperatureAbnormalCar4);
+
+    this->setUnsignedInt(g_dataBuffer + 3824, 0, pmsPantographCleatDeficiencyCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 1, pmsPantographBlockCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 2, pmsCarbonFallOffCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 3, pmsPantographCleatOutOfShapeCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 4, pmsPantographlittleOutOfShapeCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 5, pmsPantographSlideAbrasionCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 6, pmsPantographSlideMajorGapCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 7, pmsPantographArcCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 8, pmsPantographTemperatureAbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 9, pmsPantographCamera1AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 10, pmsPantographCamera2AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 11, pmsPantographCamera3AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 12, pmsPantographCamera4AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 13, pmsPantographCamera5AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 14, pmsPantographCamera6AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3824, 15, pmsPantographCamera7AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3825, 0, pmsPantographCamera8AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3825, 1, pmsDeviceTemperatureAbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 3825, 2, pmsControlSystemTemperatureAbnormalCar7);
 }
 
 bool Dialog::checkCcuOnline(unsigned short int signal)
