@@ -31,6 +31,17 @@ extern vector<CPage*>  g_PageVec;
 
 #define ID_BUTTON_BACK 0x0012
 
+struct mvb_port_type
+{
+    unsigned short int port, refresh;
+
+    mvb_port_type(unsigned short int port, unsigned short int refresh)
+    {
+        this->port = port;
+        this->refresh = refresh;
+    }
+};
+
 class AllPortsPage: public CPage
 {
     DECLEAR_MESSAGE_MAP(AllPortsPage)
@@ -61,11 +72,12 @@ public:
     void controlButtonDown(unsigned short int controlId);
 
 private:
-    QList<unsigned short int> hmiPorts, ccuAPorts, ccuBPorts, ermPorts, riomPorts, atcPorts,
+    QList<mvb_port_type *> hmiPorts, ccuAPorts, ccuBPorts, ermPorts, riomPorts, atcPorts,
                                 bcuAPorts, bcuBPorts, tcuPorts, edcuAPorts, edcuBPorts,
                                 acuPorts, hvacPorts, fasPorts, pmsPorts, paPorts, rsfdsPorts;
+
     unsigned short int currentId;
-    QList<unsigned short int> currentPorts;
+    QList<mvb_port_type *> currentPorts;
 };
 
 #endif // ALLPORTSPAGE_H
