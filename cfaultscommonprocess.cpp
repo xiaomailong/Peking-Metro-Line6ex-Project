@@ -3738,73 +3738,73 @@ FAULTS_ROM_DATA g_faultsrom[]={
     {0xB254,  2,  D_POS_A, 3461,   bit11,   false,  false, false,  E_FAULTS_CATEGORY_FAS    },
 
     // added by Deng Ran on the 21st of August 2017.
-    {0xC201, 2, D_POS_A, 3800, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC202, 2, D_POS_A, 3800, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC203, 2, D_POS_A, 3800, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC204, 2, D_POS_A, 3800, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC201, 2, D_POS_A, 4000, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC202, 2, D_POS_A, 4000, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC203, 2, D_POS_A, 4000, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC204, 2, D_POS_A, 4000, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC205, 2, D_POS_B, 3800, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC206, 2, D_POS_B, 3800, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC207, 2, D_POS_B, 3800, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC208, 2, D_POS_B, 3800, bit7, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC205, 2, D_POS_B, 4000, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC206, 2, D_POS_B, 4000, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC207, 2, D_POS_B, 4000, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC208, 2, D_POS_B, 4000, bit7, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC209, 2, D_POS_C, 3800, bit8, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC210, 2, D_POS_C, 3800, bit9, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC211, 2, D_POS_C, 3800, bit10, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC212, 2, D_POS_C, 3800, bit11, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC209, 2, D_POS_C, 4000, bit8, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC210, 2, D_POS_C, 4000, bit9, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC211, 2, D_POS_C, 4000, bit10, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC212, 2, D_POS_C, 4000, bit11, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC213, 2, D_POS_D, 3800, bit12, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC214, 2, D_POS_D, 3800, bit13, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC215, 2, D_POS_D, 3800, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC216, 2, D_POS_D, 3800, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC213, 2, D_POS_D, 4000, bit12, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC214, 2, D_POS_D, 4000, bit13, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC215, 2, D_POS_D, 4000, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC216, 2, D_POS_D, 4000, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC217, 2, D_POS_E, 3801, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC218, 2, D_POS_E, 3801, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC219, 2, D_POS_E, 3801, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC220, 2, D_POS_E, 3801, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC217, 2, D_POS_E, 4001, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC218, 2, D_POS_E, 4001, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC219, 2, D_POS_E, 4001, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC220, 2, D_POS_E, 4001, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC221, 2, D_POS_F, 3801, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC222, 2, D_POS_F, 3801, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC223, 2, D_POS_F, 3801, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC224, 2, D_POS_F, 3801, bit7, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC221, 2, D_POS_F, 4001, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC222, 2, D_POS_F, 4001, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC223, 2, D_POS_F, 4001, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC224, 2, D_POS_F, 4001, bit7, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC225, 2, D_POS_G, 3801, bit8, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC226, 2, D_POS_G, 3801, bit9, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC227, 2, D_POS_G, 3801, bit10, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC228, 2, D_POS_G, 3801, bit11, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC225, 2, D_POS_G, 4001, bit8, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC226, 2, D_POS_G, 4001, bit9, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC227, 2, D_POS_G, 4001, bit10, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC228, 2, D_POS_G, 4001, bit11, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC229, 2, D_POS_H, 3801, bit12, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC230, 2, D_POS_H, 3801, bit13, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC231, 2, D_POS_H, 3801, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC232, 2, D_POS_H, 3801, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC229, 2, D_POS_H, 4001, bit12, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC230, 2, D_POS_H, 4001, bit13, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC231, 2, D_POS_H, 4001, bit14, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC232, 2, D_POS_H, 4001, bit15, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
     // deleted by Deng Ran on the 21st of August 2017.
-    {0xC301, 2, D_POS_A, 3802, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC302, 2, D_POS_A, 3802, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC301, 2, D_POS_A, 4002, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC302, 2, D_POS_A, 4002, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC303, 2, D_POS_A, 3803, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC304, 2, D_POS_A, 3803, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC305, 2, D_POS_A, 3803, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC306, 2, D_POS_A, 3803, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC307, 2, D_POS_A, 3803, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC308, 2, D_POS_A, 3803, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC309, 2, D_POS_A, 3803, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC303, 2, D_POS_A, 4003, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC304, 2, D_POS_A, 4003, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC305, 2, D_POS_A, 4003, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC306, 2, D_POS_A, 4003, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC307, 2, D_POS_A, 4003, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC308, 2, D_POS_A, 4003, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC309, 2, D_POS_A, 4003, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC310, 2, D_POS_B, 3804, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC311, 2, D_POS_B, 3804, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC312, 2, D_POS_B, 3804, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC313, 2, D_POS_B, 3804, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC314, 2, D_POS_B, 3804, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC315, 2, D_POS_B, 3804, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC316, 2, D_POS_B, 3804, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC310, 2, D_POS_B, 4004, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC311, 2, D_POS_B, 4004, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC312, 2, D_POS_B, 4004, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC313, 2, D_POS_B, 4004, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC314, 2, D_POS_B, 4004, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC315, 2, D_POS_B, 4004, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC316, 2, D_POS_B, 4004, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC317, 2, D_POS_C, 3805, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC318, 2, D_POS_C, 3805, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC319, 2, D_POS_C, 3805, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC320, 2, D_POS_C, 3805, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC321, 2, D_POS_C, 3805, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC322, 2, D_POS_C, 3805, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC323, 2, D_POS_C, 3805, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC317, 2, D_POS_C, 4005, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC318, 2, D_POS_C, 4005, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC319, 2, D_POS_C, 4005, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC320, 2, D_POS_C, 4005, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC321, 2, D_POS_C, 4005, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC322, 2, D_POS_C, 4005, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC323, 2, D_POS_C, 4005, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
     {0xC324, 2, D_POS_D, 3806, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
     {0xC325, 2, D_POS_D, 3806, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
@@ -3814,98 +3814,98 @@ FAULTS_ROM_DATA g_faultsrom[]={
     {0xC329, 2, D_POS_D, 3806, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
     {0xC330, 2, D_POS_D, 3806, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC331, 2, D_POS_E, 3807, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC332, 2, D_POS_E, 3807, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC333, 2, D_POS_E, 3807, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC334, 2, D_POS_E, 3807, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC335, 2, D_POS_E, 3807, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC336, 2, D_POS_E, 3807, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC337, 2, D_POS_E, 3807, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC331, 2, D_POS_E, 4007, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC332, 2, D_POS_E, 4007, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC333, 2, D_POS_E, 4007, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC334, 2, D_POS_E, 4007, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC335, 2, D_POS_E, 4007, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC336, 2, D_POS_E, 4007, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC337, 2, D_POS_E, 4007, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC338, 2, D_POS_F, 3808, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC339, 2, D_POS_F, 3808, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC340, 2, D_POS_F, 3808, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC341, 2, D_POS_F, 3808, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC342, 2, D_POS_F, 3808, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC343, 2, D_POS_F, 3808, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC344, 2, D_POS_F, 3808, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC338, 2, D_POS_F, 4008, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC339, 2, D_POS_F, 4008, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC340, 2, D_POS_F, 4008, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC341, 2, D_POS_F, 4008, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC342, 2, D_POS_F, 4008, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC343, 2, D_POS_F, 4008, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC344, 2, D_POS_F, 4008, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC345, 2, D_POS_G, 3809, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC346, 2, D_POS_G, 3809, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC347, 2, D_POS_G, 3809, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC348, 2, D_POS_G, 3809, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC349, 2, D_POS_G, 3809, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC350, 2, D_POS_G, 3809, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC351, 2, D_POS_G, 3809, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC345, 2, D_POS_G, 4009, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC346, 2, D_POS_G, 4009, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC347, 2, D_POS_G, 4009, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC348, 2, D_POS_G, 4009, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC349, 2, D_POS_G, 4009, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC350, 2, D_POS_G, 4009, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC351, 2, D_POS_G, 4009, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
-    {0xC352, 2, D_POS_H, 3810, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC353, 2, D_POS_H, 3810, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC354, 2, D_POS_H, 3810, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC355, 2, D_POS_H, 3810, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC356, 2, D_POS_H, 3810, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC357, 2, D_POS_H, 3810, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
-    {0xC358, 2, D_POS_H, 3810, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC352, 2, D_POS_H, 4010, bit0, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC353, 2, D_POS_H, 4010, bit1, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC354, 2, D_POS_H, 4010, bit2, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC355, 2, D_POS_H, 4010, bit3, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC356, 2, D_POS_H, 4010, bit4, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC357, 2, D_POS_H, 4010, bit5, false, false, false, E_FAULTS_CATEGORY_RSDFS},
+    {0xC358, 2, D_POS_H, 4010, bit6, false, false, false, E_FAULTS_CATEGORY_RSDFS},
 
     // the fault list of pms
-    {0xD101, 2, D_POS_B, 3820, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC102, 2, D_POS_B, 3820, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC103, 2, D_POS_B, 3820, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC201, 2, D_POS_B, 3820, bit3, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC301, 2, D_POS_B, 3820, bit4, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC302, 2, D_POS_B, 3820, bit5, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC303, 2, D_POS_B, 3820, bit6, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC304, 2, D_POS_B, 3820, bit7, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC305, 2, D_POS_B, 3820, bit8, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC316, 2, D_POS_B, 3820, bit9, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC326, 2, D_POS_B, 3820, bit10, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC336, 2, D_POS_B, 3820, bit11, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC346, 2, D_POS_B, 3820, bit12, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC356, 2, D_POS_B, 3820, bit13, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC366, 2, D_POS_B, 3820, bit14, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC376, 2, D_POS_B, 3820, bit15, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC386, 2, D_POS_B, 3821, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC307, 2, D_POS_B, 3821, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC308, 2, D_POS_B, 3821, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD101, 2, D_POS_B, 4020, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC102, 2, D_POS_B, 4020, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC103, 2, D_POS_B, 4020, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC201, 2, D_POS_B, 4020, bit3, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC301, 2, D_POS_B, 4020, bit4, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC302, 2, D_POS_B, 4020, bit5, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC303, 2, D_POS_B, 4020, bit6, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC304, 2, D_POS_B, 4020, bit7, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC305, 2, D_POS_B, 4020, bit8, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC316, 2, D_POS_B, 4020, bit9, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC326, 2, D_POS_B, 4020, bit10, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC336, 2, D_POS_B, 4020, bit11, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC346, 2, D_POS_B, 4020, bit12, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC356, 2, D_POS_B, 4020, bit13, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC366, 2, D_POS_B, 4020, bit14, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC376, 2, D_POS_B, 4020, bit15, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC386, 2, D_POS_B, 4021, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC307, 2, D_POS_B, 4021, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xC308, 2, D_POS_B, 4021, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
 
-    {0xD101, 2, D_POS_D, 3822, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC102, 2, D_POS_D, 3822, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC103, 2, D_POS_D, 3822, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC201, 2, D_POS_D, 3822, bit3, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC301, 2, D_POS_D, 3822, bit4, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC302, 2, D_POS_D, 3822, bit5, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC303, 2, D_POS_D, 3822, bit6, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC304, 2, D_POS_D, 3822, bit7, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC305, 2, D_POS_D, 3822, bit8, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC316, 2, D_POS_D, 3822, bit9, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC326, 2, D_POS_D, 3822, bit10, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC336, 2, D_POS_D, 3822, bit11, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC346, 2, D_POS_D, 3822, bit12, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC356, 2, D_POS_D, 3822, bit13, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC366, 2, D_POS_D, 3822, bit14, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC376, 2, D_POS_D, 3822, bit15, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC386, 2, D_POS_D, 3823, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC307, 2, D_POS_D, 3823, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC308, 2, D_POS_D, 3823, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD101, 2, D_POS_D, 4022, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD102, 2, D_POS_D, 4022, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD103, 2, D_POS_D, 4022, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD201, 2, D_POS_D, 4022, bit3, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD301, 2, D_POS_D, 4022, bit4, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD302, 2, D_POS_D, 4022, bit5, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD303, 2, D_POS_D, 4022, bit6, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD304, 2, D_POS_D, 4022, bit7, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD305, 2, D_POS_D, 4022, bit8, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD316, 2, D_POS_D, 4022, bit9, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD326, 2, D_POS_D, 4022, bit10, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD336, 2, D_POS_D, 4022, bit11, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD346, 2, D_POS_D, 4022, bit12, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD356, 2, D_POS_D, 4022, bit13, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD366, 2, D_POS_D, 4022, bit14, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD376, 2, D_POS_D, 4022, bit15, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD386, 2, D_POS_D, 4023, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD307, 2, D_POS_D, 4023, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD308, 2, D_POS_D, 4023, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
 
-    {0xD101, 2, D_POS_G, 3824, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC102, 2, D_POS_G, 3824, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC103, 2, D_POS_G, 3824, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC201, 2, D_POS_G, 3824, bit3, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC301, 2, D_POS_G, 3824, bit4, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC302, 2, D_POS_G, 3824, bit5, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC303, 2, D_POS_G, 3824, bit6, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC304, 2, D_POS_G, 3824, bit7, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC305, 2, D_POS_G, 3824, bit8, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC316, 2, D_POS_G, 3824, bit9, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC326, 2, D_POS_G, 3824, bit10, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC336, 2, D_POS_G, 3824, bit11, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC346, 2, D_POS_G, 3824, bit12, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC356, 2, D_POS_G, 3824, bit13, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC366, 2, D_POS_G, 3824, bit14, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC376, 2, D_POS_G, 3824, bit15, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC386, 2, D_POS_G, 3825, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC307, 2, D_POS_G, 3825, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
-    {0xC308, 2, D_POS_G, 3825, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD101, 2, D_POS_G, 4024, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD102, 2, D_POS_G, 4024, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD103, 2, D_POS_G, 4024, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD201, 2, D_POS_G, 4024, bit3, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD301, 2, D_POS_G, 4024, bit4, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD302, 2, D_POS_G, 4024, bit5, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD303, 2, D_POS_G, 4024, bit6, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD304, 2, D_POS_G, 4024, bit7, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD305, 2, D_POS_G, 4024, bit8, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD316, 2, D_POS_G, 4024, bit9, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD326, 2, D_POS_G, 4024, bit10, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD336, 2, D_POS_G, 4024, bit11, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD346, 2, D_POS_G, 4024, bit12, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD356, 2, D_POS_G, 4024, bit13, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD366, 2, D_POS_G, 4024, bit14, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD376, 2, D_POS_G, 4024, bit15, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD386, 2, D_POS_G, 4025, bit0, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD307, 2, D_POS_G, 4025, bit1, false, false, false, E_FAULTS_CATEGORY_PMS},
+    {0xD308, 2, D_POS_G, 4025, bit2, false, false, false, E_FAULTS_CATEGORY_PMS},
 };
 
 int g_faultsRomLen = sizeof(g_faultsrom)/sizeof(FAULTS_ROM_DATA);
@@ -3913,6 +3913,12 @@ int g_faultsRomLen = sizeof(g_faultsrom)/sizeof(FAULTS_ROM_DATA);
 
 bool FaultsVerdict(FAULTS_ROM_DATA *pdata)
 {
+    // this function could be used as a test block
+    // if (pdata->code == 0xD101)
+    // {
+    //     qDebug() << g_dataBuffer[pdata->word];
+    // }
+
     if ((pdata->code >= 0x1200) && (pdata->code <= 0x13FF))
     {
         if (0x1301 == pdata->code)
@@ -4141,34 +4147,6 @@ bool FaultsVerdict(FAULTS_ROM_DATA *pdata)
             }
         }
     }
-//    else if((0x4204 == pdata->code)||(0x4205 == pdata->code) )//
-//    {
-//        if(pdata->word==3063)
-//        {
-//            if ( Bit(CCU_HMI_222_9, 12 )|| Bit(CCU_HMI_222_9, 11 ) )
-//            {
-//                if (0 == (g_dataBuffer[pdata->word] & pdata->bit))
-//                {
-//                    return true;
-//                }
-//            }
-
-//        }
-
-//        if(pdata->word==3143)
-//        {
-//            if (Bit(CCU_HMI_222_9, 10 ) || Bit(CCU_HMI_222_9, 9 ) )
-//            {
-//                if (0 == (g_dataBuffer[pdata->word] & pdata->bit))
-//                {
-//                    return true;
-//                }
-//            }
-//        }
-
-
-
-//    }
     else if (0 != (g_dataBuffer[pdata->word] & pdata->bit))
     {
         return true;
@@ -4502,6 +4480,16 @@ void SetFaultType(E_FAULTS_TYPE type)
         g_realTimeConditionFilter.category = E_FAULTS_CATEGORY_FAS;
         g_realTimeConditionFilter.level = D_CONDITION_FILTER_LEVEL_12;
         break;
+    case E_FAULTS_TYPE_RSFDS:
+        g_subSystemFaultsTitle = QSTR("走行部故障");
+        g_realTimeConditionFilter.category = E_FAULTS_CATEGORY_FAS;
+        g_realTimeConditionFilter.level = D_CONDITION_FILTER_LEVEL_12;
+        break;
+    case E_FAULTS_TYPE_PMS:
+        g_subSystemFaultsTitle = QSTR("PMS故障");
+        g_realTimeConditionFilter.category = E_FAULTS_CATEGORY_FAS;
+        g_realTimeConditionFilter.level = D_CONDITION_FILTER_LEVEL_12;
+        break;
     case E_FAULTS_TYPE_RESERVE:
         g_subSystemFaultsTitle = QSTR("保留故障");
         g_realTimeConditionFilter.category = E_FAULTS_CATEGORY_RSV;
@@ -4550,6 +4538,12 @@ QString GetCategoryStr(int iGategory)
         break;
     case E_FAULTS_CATEGORY_FAS:
         str = "FAS";
+        break;
+    case E_FAULTS_CATEGORY_RSDFS:
+        str = "RSFDS";
+        break;
+    case E_FAULTS_CATEGORY_PMS:
+        str = "PMS";
         break;
     case E_FAULTS_CATEGORY_RSV:
         str = "RESERVE";

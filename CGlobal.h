@@ -549,7 +549,7 @@ extern bool g_fas2_comm_err_flg;
 extern bool g_CCU1_comm_err_flg;
 extern bool g_CCU2_comm_err_flg;
 
-#define D_DATA_BUFFER_SIZE 4000
+#define D_DATA_BUFFER_SIZE 4100
 
 extern WORD g_dataBuffer[D_DATA_BUFFER_SIZE];
 extern WORD g_dataBuffer_MVB[D_DATA_BUFFER_SIZE];

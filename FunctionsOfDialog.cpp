@@ -529,173 +529,173 @@ void Dialog::updateSignals()
 
     // tds
     // added by Deng Ran on the 22nd of August 2017, the function of fault diagnosis
-    this->setUnsignedInt(g_dataBuffer + 3800, 0, tdsAxis1MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3800, 1, tdsAxis2MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3800, 2, tdsAxis3MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3800, 3, tdsAxis4MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 0, tdsAxis1MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 1, tdsAxis2MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 2, tdsAxis3MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4000, 3, tdsAxis4MinorFaultCar1);
 
-    this->setUnsignedInt(g_dataBuffer + 3800, 4, tdsAxis1MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3800, 5, tdsAxis2MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3800, 6, tdsAxis3MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3800, 7, tdsAxis4MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 4, tdsAxis1MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 5, tdsAxis2MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 6, tdsAxis3MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4000, 7, tdsAxis4MinorFaultCar2);
 
-    this->setUnsignedInt(g_dataBuffer + 3800, 8, tdsAxis1MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3800, 9, tdsAxis2MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3800, 10, tdsAxis3MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3800, 11, tdsAxis4MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 8, tdsAxis1MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 9, tdsAxis2MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 10, tdsAxis3MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4000, 11, tdsAxis4MinorFaultCar3);
 
-    this->setUnsignedInt(g_dataBuffer + 3800, 12, tdsAxis1MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3800, 13, tdsAxis2MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3800, 14, tdsAxis3MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3800, 15, tdsAxis4MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 12, tdsAxis1MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 13, tdsAxis2MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 14, tdsAxis3MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4000, 15, tdsAxis4MinorFaultCar4);
 
-    this->setUnsignedInt(g_dataBuffer + 3801, 0, tdsAxis1MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3801, 1, tdsAxis2MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3801, 2, tdsAxis3MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3801, 3, tdsAxis4MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 0, tdsAxis1MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 1, tdsAxis2MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 2, tdsAxis3MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4001, 3, tdsAxis4MinorFaultCar5);
 
-    this->setUnsignedInt(g_dataBuffer + 3801, 4, tdsAxis1MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3801, 5, tdsAxis2MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3801, 6, tdsAxis3MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3801, 7, tdsAxis4MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 4, tdsAxis1MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 5, tdsAxis2MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 6, tdsAxis3MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4001, 7, tdsAxis4MinorFaultCar6);
 
-    this->setUnsignedInt(g_dataBuffer + 3801, 8, tdsAxis1MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3801, 9, tdsAxis2MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3801, 10, tdsAxis3MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3801, 11, tdsAxis4MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 8, tdsAxis1MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 9, tdsAxis2MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 10, tdsAxis3MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4001, 11, tdsAxis4MinorFaultCar7);
 
-    this->setUnsignedInt(g_dataBuffer + 3801, 12, tdsAxis1MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3801, 13, tdsAxis2MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3801, 14, tdsAxis3MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3801, 15, tdsAxis4MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 12, tdsAxis1MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 13, tdsAxis2MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 14, tdsAxis3MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4001, 15, tdsAxis4MinorFaultCar8);
 
-    this->setUnsignedInt(g_dataBuffer + 3802, 0, tdsSystemSlightFault);
-    this->setUnsignedInt(g_dataBuffer + 3802, 1, tdsSystemMajorFault);
+    this->setUnsignedInt(g_dataBuffer + 4002, 0, tdsSystemSlightFault);
+    this->setUnsignedInt(g_dataBuffer + 4002, 1, tdsSystemMajorFault);
 
-    this->setUnsignedInt(g_dataBuffer + 3803, 0, tdsAxis1MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3803, 1, tdsAxis2MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3803, 2, tdsAxis3MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3803, 3, tdsAxis4MinorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3803, 4, tdsControllerFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3803, 5, tdsProcessorFaultCar1);
-    this->setUnsignedInt(g_dataBuffer + 3803, 6, tdsSensorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 0, tdsAxis1MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 1, tdsAxis2MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 2, tdsAxis3MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 3, tdsAxis4MinorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 4, tdsControllerFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 5, tdsProcessorFaultCar1);
+    this->setUnsignedInt(g_dataBuffer + 4003, 6, tdsSensorFaultCar1);
 
-    this->setUnsignedInt(g_dataBuffer + 3804, 0, tdsAxis1MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3804, 1, tdsAxis2MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3804, 2, tdsAxis3MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3804, 3, tdsAxis4MinorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3804, 4, tdsControllerFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3804, 5, tdsProcessorFaultCar2);
-    this->setUnsignedInt(g_dataBuffer + 3804, 6, tdsSensorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 0, tdsAxis1MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 1, tdsAxis2MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 2, tdsAxis3MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 3, tdsAxis4MinorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 4, tdsControllerFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 5, tdsProcessorFaultCar2);
+    this->setUnsignedInt(g_dataBuffer + 4004, 6, tdsSensorFaultCar2);
 
-    this->setUnsignedInt(g_dataBuffer + 3805, 0, tdsAxis1MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3805, 1, tdsAxis2MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3805, 2, tdsAxis3MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3805, 3, tdsAxis4MinorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3805, 4, tdsControllerFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3805, 5, tdsProcessorFaultCar3);
-    this->setUnsignedInt(g_dataBuffer + 3805, 6, tdsSensorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 0, tdsAxis1MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 1, tdsAxis2MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 2, tdsAxis3MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 3, tdsAxis4MinorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 4, tdsControllerFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 5, tdsProcessorFaultCar3);
+    this->setUnsignedInt(g_dataBuffer + 4005, 6, tdsSensorFaultCar3);
 
-    this->setUnsignedInt(g_dataBuffer + 3806, 0, tdsAxis1MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3806, 1, tdsAxis2MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3806, 2, tdsAxis3MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3806, 3, tdsAxis4MinorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3806, 4, tdsControllerFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3806, 5, tdsProcessorFaultCar4);
-    this->setUnsignedInt(g_dataBuffer + 3806, 6, tdsSensorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 0, tdsAxis1MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 1, tdsAxis2MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 2, tdsAxis3MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 3, tdsAxis4MinorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 4, tdsControllerFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 5, tdsProcessorFaultCar4);
+    this->setUnsignedInt(g_dataBuffer + 4006, 6, tdsSensorFaultCar4);
 
-    this->setUnsignedInt(g_dataBuffer + 3807, 0, tdsAxis1MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3807, 1, tdsAxis2MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3807, 2, tdsAxis3MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3807, 3, tdsAxis4MinorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3807, 4, tdsControllerFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3807, 5, tdsProcessorFaultCar5);
-    this->setUnsignedInt(g_dataBuffer + 3807, 6, tdsSensorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 0, tdsAxis1MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 1, tdsAxis2MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 2, tdsAxis3MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 3, tdsAxis4MinorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 4, tdsControllerFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 5, tdsProcessorFaultCar5);
+    this->setUnsignedInt(g_dataBuffer + 4007, 6, tdsSensorFaultCar5);
 
-    this->setUnsignedInt(g_dataBuffer + 3808, 0, tdsAxis1MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3808, 1, tdsAxis2MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3808, 2, tdsAxis3MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3808, 3, tdsAxis4MinorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3808, 4, tdsControllerFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3808, 5, tdsProcessorFaultCar6);
-    this->setUnsignedInt(g_dataBuffer + 3808, 6, tdsSensorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 0, tdsAxis1MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 1, tdsAxis2MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 2, tdsAxis3MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 3, tdsAxis4MinorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 4, tdsControllerFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 5, tdsProcessorFaultCar6);
+    this->setUnsignedInt(g_dataBuffer + 4008, 6, tdsSensorFaultCar6);
 
-    this->setUnsignedInt(g_dataBuffer + 3809, 0, tdsAxis1MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3809, 1, tdsAxis2MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3809, 2, tdsAxis3MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3809, 3, tdsAxis4MinorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3809, 4, tdsControllerFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3809, 5, tdsProcessorFaultCar7);
-    this->setUnsignedInt(g_dataBuffer + 3809, 6, tdsSensorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 0, tdsAxis1MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 1, tdsAxis2MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 2, tdsAxis3MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 3, tdsAxis4MinorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 4, tdsControllerFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 5, tdsProcessorFaultCar7);
+    this->setUnsignedInt(g_dataBuffer + 4009, 6, tdsSensorFaultCar7);
 
-    this->setUnsignedInt(g_dataBuffer + 3810, 0, tdsAxis1MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3810, 1, tdsAxis2MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3810, 2, tdsAxis3MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3810, 3, tdsAxis4MinorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3810, 4, tdsControllerFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3810, 5, tdsProcessorFaultCar8);
-    this->setUnsignedInt(g_dataBuffer + 3810, 6, tdsSensorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 0, tdsAxis1MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 1, tdsAxis2MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 2, tdsAxis3MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 3, tdsAxis4MinorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 4, tdsControllerFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 5, tdsProcessorFaultCar8);
+    this->setUnsignedInt(g_dataBuffer + 4010, 6, tdsSensorFaultCar8);
 
     // the fault signals of pms
-    this->setUnsignedInt(g_dataBuffer + 3820, 0, pmsPantographCleatDeficiencyCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 1, pmsPantographBlockCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 2, pmsCarbonFallOffCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 3, pmsPantographCleatOutOfShapeCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 4, pmsPantographlittleOutOfShapeCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 5, pmsPantographSlideAbrasionCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 6, pmsPantographSlideMajorGapCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 7, pmsPantographArcCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 8, pmsPantographTemperatureAbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 9, pmsPantographCamera1AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 10, pmsPantographCamera2AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 11, pmsPantographCamera3AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 12, pmsPantographCamera4AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 13, pmsPantographCamera5AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 14, pmsPantographCamera6AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3820, 15, pmsPantographCamera7AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3821, 0, pmsPantographCamera8AbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3821, 1, pmsDeviceTemperatureAbnormalCar2);
-    this->setUnsignedInt(g_dataBuffer + 3821, 2, pmsControlSystemTemperatureAbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 0, pmsPantographCleatDeficiencyCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 1, pmsPantographBlockCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 2, pmsCarbonFallOffCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 3, pmsPantographCleatOutOfShapeCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 4, pmsPantographlittleOutOfShapeCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 5, pmsPantographSlideAbrasionCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 6, pmsPantographSlideMajorGapCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 7, pmsPantographArcCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 8, pmsPantographTemperatureAbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 9, pmsPantographCamera1AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 10, pmsPantographCamera2AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 11, pmsPantographCamera3AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 12, pmsPantographCamera4AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 13, pmsPantographCamera5AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 14, pmsPantographCamera6AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4020, 15, pmsPantographCamera7AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4021, 0, pmsPantographCamera8AbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4021, 1, pmsDeviceTemperatureAbnormalCar2);
+    this->setUnsignedInt(g_dataBuffer + 4021, 2, pmsControlSystemTemperatureAbnormalCar2);
 
-    this->setUnsignedInt(g_dataBuffer + 3822, 0, pmsPantographCleatDeficiencyCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 1, pmsPantographBlockCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 2, pmsCarbonFallOffCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 3, pmsPantographCleatOutOfShapeCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 4, pmsPantographlittleOutOfShapeCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 5, pmsPantographSlideAbrasionCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 6, pmsPantographSlideMajorGapCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 7, pmsPantographArcCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 8, pmsPantographTemperatureAbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 9, pmsPantographCamera1AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 10, pmsPantographCamera2AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 11, pmsPantographCamera3AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 12, pmsPantographCamera4AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 13, pmsPantographCamera5AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 14, pmsPantographCamera6AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3822, 15, pmsPantographCamera7AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3823, 0, pmsPantographCamera8AbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3823, 1, pmsDeviceTemperatureAbnormalCar4);
-    this->setUnsignedInt(g_dataBuffer + 3823, 2, pmsControlSystemTemperatureAbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 0, pmsPantographCleatDeficiencyCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 1, pmsPantographBlockCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 2, pmsCarbonFallOffCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 3, pmsPantographCleatOutOfShapeCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 4, pmsPantographlittleOutOfShapeCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 5, pmsPantographSlideAbrasionCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 6, pmsPantographSlideMajorGapCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 7, pmsPantographArcCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 8, pmsPantographTemperatureAbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 9, pmsPantographCamera1AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 10, pmsPantographCamera2AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 11, pmsPantographCamera3AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 12, pmsPantographCamera4AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 13, pmsPantographCamera5AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 14, pmsPantographCamera6AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4022, 15, pmsPantographCamera7AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4023, 0, pmsPantographCamera8AbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4023, 1, pmsDeviceTemperatureAbnormalCar4);
+    this->setUnsignedInt(g_dataBuffer + 4023, 2, pmsControlSystemTemperatureAbnormalCar4);
 
-    this->setUnsignedInt(g_dataBuffer + 3824, 0, pmsPantographCleatDeficiencyCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 1, pmsPantographBlockCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 2, pmsCarbonFallOffCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 3, pmsPantographCleatOutOfShapeCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 4, pmsPantographlittleOutOfShapeCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 5, pmsPantographSlideAbrasionCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 6, pmsPantographSlideMajorGapCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 7, pmsPantographArcCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 8, pmsPantographTemperatureAbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 9, pmsPantographCamera1AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 10, pmsPantographCamera2AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 11, pmsPantographCamera3AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 12, pmsPantographCamera4AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 13, pmsPantographCamera5AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 14, pmsPantographCamera6AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3824, 15, pmsPantographCamera7AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3825, 0, pmsPantographCamera8AbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3825, 1, pmsDeviceTemperatureAbnormalCar7);
-    this->setUnsignedInt(g_dataBuffer + 3825, 2, pmsControlSystemTemperatureAbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 0, pmsPantographCleatDeficiencyCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 1, pmsPantographBlockCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 2, pmsCarbonFallOffCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 3, pmsPantographCleatOutOfShapeCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 4, pmsPantographlittleOutOfShapeCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 5, pmsPantographSlideAbrasionCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 6, pmsPantographSlideMajorGapCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 7, pmsPantographArcCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 8, pmsPantographTemperatureAbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 9, pmsPantographCamera1AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 10, pmsPantographCamera2AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 11, pmsPantographCamera3AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 12, pmsPantographCamera4AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 13, pmsPantographCamera5AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 14, pmsPantographCamera6AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4024, 15, pmsPantographCamera7AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4025, 0, pmsPantographCamera8AbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4025, 1, pmsDeviceTemperatureAbnormalCar7);
+    this->setUnsignedInt(g_dataBuffer + 4025, 2, pmsControlSystemTemperatureAbnormalCar7);
 }
 
 bool Dialog::checkCcuOnline(unsigned short int signal)
@@ -759,10 +759,10 @@ void Dialog::setUnsignedInt(unsigned short int *pointer, unsigned short int bitO
 {
     if (value)
     {
-        *pointer = *pointer |= (0x0001 << bitOffset);
+        *pointer = *pointer | (0x0001 << bitOffset);
     }
     else
     {
-        *pointer = *pointer &= ~(0x0001 << bitOffset);
+        *pointer = *pointer & ~(0x0001 << bitOffset);
     }
 }
