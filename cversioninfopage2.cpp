@@ -33,7 +33,7 @@ ROMDATA g_PicRom_VersionInfo2[] =
     {"",                       D_FONT_BOLD(6),      QRect(690, 120,   1, 420),           Qt::white,                Qt::black,                CONTROL_LINE,           ID_IGNORE         },
     {"",                       D_FONT_BOLD(6),      QRect(780, 120,   1, 420),           Qt::white,                Qt::black,                CONTROL_LINE,           ID_IGNORE         },
 
-    {QSTR("TDS"), D_FONT_BOLD(6), QRect(6, 121, 53, 29), Qt::white, Qt::transparent, CONTROL_LABEL, ID_IGNORE},
+    {QSTR("RSFDS"), D_FONT_BOLD(6), QRect(6, 121, 53, 29), Qt::white, Qt::transparent, CONTROL_LABEL, ID_IGNORE},
 
     {QSTR("Car1"), D_FONT_BOLD(6), QRect(6 + 75, 121,  53, 29), Qt::white, Qt::black, CONTROL_LABEL, ID_PIBVIP_LABEL_TDS_CAR1},
     {QSTR("Car1"), D_FONT_BOLD(6), QRect(6 + 700, 121,  53, 29), Qt::white, Qt::black, CONTROL_LABEL, ID_PIBVIP_LABEL_TDS_CAR8},

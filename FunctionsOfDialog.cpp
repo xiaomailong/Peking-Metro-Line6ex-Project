@@ -570,7 +570,7 @@ void Dialog::updateSignals()
     this->setUnsignedInt(g_dataBuffer + 4001, 15, tdsAxis4MinorFaultCar8);
 
     this->setUnsignedInt(g_dataBuffer + 4002, 0, tdsSystemSlightFault);
-    this->setUnsignedInt(g_dataBuffer + 4002, 1, tdsSystemMajorFault);
+    this->setUnsignedInt(g_dataBuffer + 4002, 1, tdsInternalBusError);
 
     this->setUnsignedInt(g_dataBuffer + 4003, 0, tdsAxis1MinorFaultCar1);
     this->setUnsignedInt(g_dataBuffer + 4003, 1, tdsAxis2MinorFaultCar1);
