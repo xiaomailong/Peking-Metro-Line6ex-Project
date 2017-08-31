@@ -105,7 +105,9 @@ SOURCES += main.cpp \
     headcontrol.cpp \
     carriagecontrol.cpp \
     cversioninfopage2.cpp \
-    pmsstatepage.cpp
+    pmsstatepage.cpp \
+    allportspage.cpp \
+    FunctionsOfDialog.cpp
 HEADERS += dialog.h \
     CGlobal.h \
     CControlInterface.h \
@@ -207,7 +209,8 @@ HEADERS += dialog.h \
     headcontrol.h \
     carriagecontrol.h \
     cversioninfopage2.h \
-    pmsstatepage.h
+    pmsstatepage.h \
+    allportspage.h
 FORMS += dialog.ui \
     cdebugdialog.ui \
     cwarningdialog.ui \

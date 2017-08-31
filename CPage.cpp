@@ -676,6 +676,8 @@ void CPage::updateTrain(int nTrainID)
     }
 
 
+    ((CTrainCtrl*)GetDlgItem(nTrainID))->SetEscapeDoorColor(1, Qt::red);
+
     //CTHM_Tc1DI3On_B1 TC1车DI3在线 && CTHM_Tc1GWOn_B1TC1车GW在线
     if ( (Bit(CCU_HMI_222_11, 13 ))&&(Bit(CCU_HMI_222_11, 16 ))== 1)
     {
@@ -828,7 +830,6 @@ void CPage::updateArrow(int nLeftArrowID,int nRightArrowID)
     {
         ((CArrowCtrl*)GetDlgItem(nRightArrowID))->HideArrow();
     }
-
 }
 
 void CPage::updateFault(int nFaultID)

@@ -58,7 +58,7 @@ AllPortsPage::AllPortsPage()
                     << new mvb_port_type(0x538, 64) << new mvb_port_type(0x548, 64) << new mvb_port_type(0x558, 64)
                     << new mvb_port_type(0x568, 64)
                     << new mvb_port_type(0x418, 64) << new mvb_port_type(0x618, 64) << new mvb_port_type(0x628, 64)
-                    << new mvb_port_type(0x718, 64) << new mvb_port_type(0x818, 64) << new mvb_port_type(0x918, 256)
+                    << new mvb_port_type(0x718, 256) << new mvb_port_type(0x818, 256) << new mvb_port_type(0x918, 256)
                     << new mvb_port_type(0x919, 256) << new mvb_port_type(0xA18, 128) << new mvb_port_type(0xB18, 256)
                     << new mvb_port_type(0x118, 64) << new mvb_port_type(0x188, 64) << new mvb_port_type(0x128, 64)
                     << new mvb_port_type(0x138, 64);
@@ -117,7 +117,7 @@ AllPortsPage::AllPortsPage()
 
     this->atcPorts << new mvb_port_type(0xA10, 128) << new mvb_port_type(0xA11, 128);
 
-    this->fasPorts << new mvb_port_type(0xB10, 256) << new mvb_port_type(0xB11, 256);
+    this->fasPorts << new mvb_port_type(0xB10, 256) << new mvb_port_type(0xB20, 256);
 
     this->riomPorts << new mvb_port_type(0x110, 64) << new mvb_port_type(0x180, 64) << new mvb_port_type(0x120, 64)
                     << new mvb_port_type(0x170, 64) << new mvb_port_type(0x130, 64) << new mvb_port_type(0x160, 64)
@@ -128,10 +128,10 @@ AllPortsPage::AllPortsPage()
                    << new mvb_port_type(0x203, 256) << new mvb_port_type(0x280, 256) << new mvb_port_type(0x281, 256)
                    << new mvb_port_type(0x282, 256) << new mvb_port_type(0x283, 256);
 
-    this->rsfdsPorts << new mvb_port_type(0xC10, 256) << new mvb_port_type(0xC11, 256) << new mvb_port_type(0xC12, 256)
-                     << new mvb_port_type(0xC13, 256) << new mvb_port_type(0xC14, 256) << new mvb_port_type(0xC20, 256)
-                     << new mvb_port_type(0xC21, 256) << new mvb_port_type(0xC22, 256) << new mvb_port_type(0xC23, 256)
-                     << new mvb_port_type(0xC24, 256);
+    this->rsfdsPorts << new mvb_port_type(0xC10, 1024) << new mvb_port_type(0xC11, 1024) << new mvb_port_type(0xC12, 1024)
+                     << new mvb_port_type(0xC13, 1024) << new mvb_port_type(0xC14, 1024) << new mvb_port_type(0xC20, 1024)
+                     << new mvb_port_type(0xC21, 1024) << new mvb_port_type(0xC22, 1024) << new mvb_port_type(0xC23, 1024)
+                     << new mvb_port_type(0xC24, 1024);
 
     this->pmsPorts << new mvb_port_type(0xF20, 1024) << new mvb_port_type(0xF40, 1024) << new mvb_port_type(0xF70, 1024);
 }

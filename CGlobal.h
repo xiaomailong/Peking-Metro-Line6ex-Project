@@ -31,18 +31,21 @@ using namespace std;
 
 #define TractionSystemTest_y 30
 
+// added by Deng Ran to reduce the macro that change every time when compile
+#define USER_DEBUG_MODE 1
+
 // changed by Dengran
 //serial data common macro
-#if 1
+#if USER_DEBUG_MODE
 #define USE_RAND_DATA
 #endif
 
-#if 0
+#if USER_DEBUG_MODE == 0
 #define USE_SERIAL_DATA
 #endif
 //20111102 zlbzeb add begin
 //use mvb data common macro
-#if 0
+#if USER_DEBUG_MODE == 0
 #define USE_MVB_DATA
 //20111102 zlbzeb add end
 #endif

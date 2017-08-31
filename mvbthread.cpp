@@ -477,6 +477,11 @@ bool MvbThread::init()
     pixymvb_AddPort(0xC23, PIXYMVB_SNKPORT, 16, NULL);
     pixymvb_AddPort(0xC24, PIXYMVB_SNKPORT, 16, NULL);
 
+    // added by Deng Ran on the 31st of August 2017
+    pixymvb_AddPort(0xC08, PIXYMVB_SNKPORT, 16, NULL);
+    pixymvb_AddPort(0xC09, PIXYMVB_SNKPORT, 16, NULL);
+    pixymvb_AddPort(0xC0A, PIXYMVB_SNKPORT, 16, NULL);
+
     // Change MVB State To Operation State
     RetVal = pixymvb_ChangeState(PIXYMVB_OPERATION_STATE); // OP Mode
 #ifdef DEBUG
@@ -561,8 +566,11 @@ void MvbThread::run()
                 {
                     srcPortData203[i] = UNSIGNED16(sendData[96+i*2]<< 8) + UNSIGNED16(sendData[96+i*2+1]) ;
                 }
-                // send src data to bus
+
+                // send src data to bus, addded by Deng Ran on the 31st of August 2017.
                 RetVal = pixymvb_PutPort(0x200, (PIXYMVB_Data *) &(srcPortData200[0]));
+                this->copyPort(0x200, srcPortData200, 65535 - 256);
+
                 test_tempdata[100]=RetVal/256;
                 test_tempdata[101]=RetVal%256;
     #ifdef DEBUG
@@ -570,13 +578,13 @@ void MvbThread::run()
     #endif
 
                 pixymvb_PutPort(0x201, (PIXYMVB_Data *) &(srcPortData201[0]));
-                this->copyPort(0x110, srcPortData201, 65535 - 256);
+                this->copyPort(0x201, srcPortData201, 65535 - 256);
 
                 pixymvb_PutPort(0x202, (PIXYMVB_Data *) &(srcPortData202[0]));
-                this->copyPort(0x110, srcPortData202, 65535 - 256);
+                this->copyPort(0x202, srcPortData202, 65535 - 256);
 
                 pixymvb_PutPort(0x203, (PIXYMVB_Data *) &(srcPortData203[0]));
-                this->copyPort(0x110, srcPortData203, 65535 - 256);
+                this->copyPort(0x203, srcPortData203, 65535 - 256);
             }
             else
             {   // HMI tc2 set src data
@@ -598,21 +606,24 @@ void MvbThread::run()
                     {
                         srcPortData283[i] = UNSIGNED16(sendData[96+i*2]<< 8) + UNSIGNED16(sendData[96+i*2+1]) ;
                     }
-                    // send src data to bus
+
+                    // send src data to bus, added by Deng Ran on the 31st of August 2017.
                     RetVal = pixymvb_PutPort(0x280, (PIXYMVB_Data *) &(srcPortData280[0]));
+                    this->copyPort(0x280, srcPortData280, 65535 - 256);
+
                     test_tempdata[100]=RetVal/256;
                     test_tempdata[101]=RetVal%256;
         #ifdef DEBUG
                     writeDebugLog( "pixymvb_PutPort", RetVal );
         #endif
                     pixymvb_PutPort(0x281, (PIXYMVB_Data *) &(srcPortData281[0]));
-                    this->copyPort(0x110, srcPortData281, 65535 - 256);
+                    this->copyPort(0x281, srcPortData281, 65535 - 256);
 
                     pixymvb_PutPort(0x282, (PIXYMVB_Data *) &(srcPortData282[0]));
-                    this->copyPort(0x110, srcPortData282, 65535 - 256);
+                    this->copyPort(0x282, srcPortData282, 65535 - 256);
 
                     pixymvb_PutPort(0x283, (PIXYMVB_Data *) &(srcPortData283[0]));
-                    this->copyPort(0x110, srcPortData283, 65535 - 256);
+                    this->copyPort(0x283, srcPortData283, 65535 - 256);
                 }
                 else
                 {
@@ -2075,6 +2086,16 @@ void MvbThread::run()
 
             pixymvb_GetPort(0xF70, &temp, &snkTmeSupv);
             this->copyPort(0xF70, temp, snkTmeSupv);
+
+            // added by Deng Ran on the 31st of August 2017.
+            pixymvb_GetPort(0xC08, &temp, &snkTmeSupv);
+            this->copyPort(0xC08, temp, snkTmeSupv);
+
+            pixymvb_GetPort(0xC09, &temp, &snkTmeSupv);
+            this->copyPort(0xC09, temp, snkTmeSupv);
+
+            pixymvb_GetPort(0xC0A, &temp, &snkTmeSupv);
+            this->copyPort(0xC0A, temp, snkTmeSupv);
 
             // changed by Deng Ran on the 31st of July 2017.
             msleep(200);
