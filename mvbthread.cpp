@@ -478,7 +478,7 @@ bool MvbThread::init()
     pixymvb_AddPort(0xC24, PIXYMVB_SNKPORT, 16, NULL);
 
     // added by Deng Ran on the 31st of August 2017
-    pixymvb_AddPort(0xC08, PIXYMVB_SNKPORT, 16, NULL);
+    pixymvb_AddPort(0xC08, PIXYMVB_SNKPORT, 8, NULL);
     pixymvb_AddPort(0xC09, PIXYMVB_SNKPORT, 16, NULL);
     pixymvb_AddPort(0xC0A, PIXYMVB_SNKPORT, 16, NULL);
 
