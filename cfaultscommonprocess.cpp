@@ -3928,12 +3928,6 @@ int g_faultsRomLen = sizeof(g_faultsrom)/sizeof(FAULTS_ROM_DATA);
 
 bool FaultsVerdict(FAULTS_ROM_DATA *pdata)
 {
-    // this function could be used as a test block
-    // if (pdata->code == 0xD101)
-    // {
-    //     qDebug() << g_dataBuffer[pdata->word];
-    // }
-
     if ((pdata->code >= 0x1200) && (pdata->code <= 0x13FF))
     {
         if (0x1301 == pdata->code)
@@ -4146,36 +4140,22 @@ bool FaultsVerdict(FAULTS_ROM_DATA *pdata)
             }
         }
 
-        // deleted by Deng Ran on the 01st of September 2017, it is not a ccu fault now.
-        // else if (0x1210 == pdata->code)
-        // {
-        //     if (((D_POS_H == pdata->pos) && g_CCU2_comm_err_flg&&(g_CCU1_comm_err_flg==0)))
-        //     {
-        //         return true;
-        //     }
-        // }
+        else if (0x1210 == pdata->code)
+        {
+            return (g_dataBuffer[pdata->word] & pdata->bit);
+        }
 
-        // deleted by Deng Ran on the 01st of September 2017. it is not a ccu fault now.
-        // else if (0x1211 == pdata->code)
-        // {
-        //     if (((D_POS_A == pdata->pos) && g_CCU1_comm_err_flg&&(g_CCU2_comm_err_flg==0)))
-        //     {
-        //         return true;
-        //     }
-        // }
+        else if (0x1211 == pdata->code)
+        {
+            return (g_dataBuffer[pdata->word] & pdata->bit);
+        }
     }
-
-    // changed by Deng Ran on the 01st of September 2017.
-    if (0 != (g_dataBuffer[pdata->word] & pdata->bit))
+    else if (0 != (g_dataBuffer[pdata->word] & pdata->bit))
     {
         return true;
     }
-    else
-    {
-        return false;
-    }
 
-    // return false;
+    return false;
 }
 
 void AddNewFaultRecordToHistoryList(ST_HISTORY_FAULT_INFO &newinfo)

@@ -93,6 +93,7 @@ void CRealTimeFaultsWarnningDialog::SetRomIdx(int rom_idx)
         ui->label->setPalette(palette);
     }
 
+    // an episode of code which may occure core dump
     ui->label->setText(" "+GetCarriageString(g_faultsrom[m_romidx].pos)+str+"  "+g_faultsinforom[nameidx].name);
 }
 
