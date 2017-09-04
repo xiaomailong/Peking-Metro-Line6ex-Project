@@ -27,7 +27,6 @@ class MvbThread : public QThread
 public:
     MvbThread();
     ~MvbThread();
-    void render();
     //UNSIGNED8 sendData[128];
 signals:
 
@@ -36,8 +35,6 @@ public slots:
 private:
     bool restart;
     bool abort;
-    QWaitCondition condition;
-    QMutex mutex;
 
     //src
     PIXYMVB_Data srcPortData200;

@@ -498,15 +498,6 @@ bool MvbThread::init()
 
     return true;
 }
-void MvbThread::render()
-{
-    if( !isRunning() ) {
-        start();
-    }else{
-        restart = true;
-        condition.wakeOne();
-    } //end
-}
 
 // added by Deng Ran on the 31th of July 2017.
 void MvbThread::copyPort(int port, PIXYMVB_Data data, unsigned short cycle)
@@ -2113,15 +2104,6 @@ void MvbThread::run()
         } // end
 
     }
-       
-
-
-
-    mutex.lock();
-    if( !restart )
-        condition.wait( &mutex );
-    restart = false;
-    mutex.unlock();
 }
 
 UNSIGNED16 MvbThread::highbyteLowbyteExchange( const UNSIGNED16 wordData )

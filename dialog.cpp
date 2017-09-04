@@ -247,8 +247,12 @@ Dialog::Dialog(QWidget *parent) :
 #ifdef USE_MVB_DATA
 
     m_mvbthread  = new MvbThread;
-    m_mvbthread->render();
-    //writeLog("USE_MVB_DATA\n");
+
+    // changed by Deng Ran on the 04th of September 2017.
+    m_mvbthread->start();
+
+    // m_mvbthread->render();
+    // writeLog("USE_MVB_DATA\n");
 #endif
 
 
@@ -381,7 +385,7 @@ void Dialog::OnUpdateData()
     this->updateSignals();
 
     // about 30s
-    if (counter % 70 == 0)
+    if (counter % 140 == 0)
     {
         this->synchronizeTimeWithCcu();
     }
