@@ -426,6 +426,14 @@ SIGNED16 pixymvb_GetLibVersion( UNSIGNED32 *major, UNSIGNED32 *minor );
 
 void pixymvb_ForceSwitch(void);
 
+UNSIGNED8 pixymvb_GetLaa(void);
+
+UNSIGNED8 pixymvb_GetRld(void);
+
+UNSIGNED8 pixymvb_GetSlm(void);
+
+void pixymvb_SetSlm(UNSIGNED8 isSlm);
+
 #ifdef __cplusplus /* C++ compiler support */
 }
 #endif

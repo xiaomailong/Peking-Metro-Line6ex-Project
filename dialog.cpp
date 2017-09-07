@@ -248,8 +248,9 @@ Dialog::Dialog(QWidget *parent) :
 
     m_mvbthread  = new MvbThread;
 
+    // deleted by Deng Ran on the 07th of September 2017, the prgram would be regarded as single thread.
     // changed by Deng Ran on the 04th of September 2017.
-    m_mvbthread->start();
+    // m_mvbthread->start();
 
     // m_mvbthread->render();
     // writeLog("USE_MVB_DATA\n");
@@ -323,11 +324,7 @@ void Dialog::OnUpdateData()
     initReceiveData();
     FaultsScanning();
 
-
-
-
     pPage->ConnectEvent(WM_UPDATEPAGE);
-
 
 
     if (pPage->TestControlExists(IDLB_COM_voltage))
@@ -394,6 +391,14 @@ void Dialog::OnUpdateData()
     if (counter % 3 == 0)
     {
         ccuOnline = this->checkCcuOnline(ccuLifeSignal);
+    }
+
+    // added by Deng Ran on the 07th of September 2017.
+    if (counter % 2 == 0)
+    {
+        #ifdef USE_MVB_DATA
+                m_mvbthread->sychronize();
+        #endif
     }
 
     counter = (counter ++) / 1000;

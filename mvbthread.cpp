@@ -520,7 +520,7 @@ void MvbThread::copyPort(int port, PIXYMVB_Data data, unsigned short cycle)
 }
 
 // changed by Deng Ran on the 31th of July 2017.
-void MvbThread::run()
+void MvbThread::sychronize()
 {
     UNSIGNED16 snkTmeSupv = 0;
     UNSIGNED16 RetVal = 0;
@@ -2099,8 +2099,9 @@ void MvbThread::run()
             pixymvb_GetPort(0xD09, &temp, &snkTmeSupv);
             this->copyPort(0xD09, temp, snkTmeSupv);
 
+            // deleted by Deng Ran on the 07th of September 2017.
             // changed by Deng Ran on the 31st of July 2017.
-            msleep(300);
+            // msleep(300);
         } // end
 
     }

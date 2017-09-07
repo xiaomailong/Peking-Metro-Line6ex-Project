@@ -20,10 +20,10 @@
 #include "PixyTypes.h"
 #include "PixyMvbLib.h"
 
-
-class MvbThread : public QThread
+// changed by Deng Ran on the 07th of September 2017.
+// the program woule be regarded as single thread
+class MvbThread
 {
-    Q_OBJECT
 public:
     MvbThread();
     ~MvbThread();
@@ -208,7 +208,7 @@ private:
 
     //--------------------º¯ÊýÇø---------------------------------------------
     bool init();
-    void run();
+    void sychronize();
     UNSIGNED16 highbyteLowbyteExchange(const UNSIGNED16 wordData);
     void copyPort(int port, PIXYMVB_Data data, unsigned short int cycle);
 #ifdef DEBUG

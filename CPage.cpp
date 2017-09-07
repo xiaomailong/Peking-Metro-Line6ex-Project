@@ -874,8 +874,11 @@ void CPage::UpdateCommInterrupt(int nInteruptID)
 
 void CPage::OnTitleCLK()
 {
-   if(((Dialog*)GetParentDlg())->serialDebugDlg.isHidden())
-       ((Dialog*)GetParentDlg())->serialDebugDlg.show();
+    // deleted by Deng Ran on the 07th of September 2017.
+    // if(((Dialog*)GetParentDlg())->serialDebugDlg.isHidden())
+    // {
+    //     ((Dialog*)GetParentDlg())->serialDebugDlg.show();
+    // }
 }
 
 void CPage::updateErrorLine(int nTrainID)
