@@ -205,15 +205,15 @@ private:
     PIXYMVB_Data snkPortDataB08;
     PIXYMVB_Data snkPortDataB18;
 
-
-    //--------------------º¯ÊýÇø---------------------------------------------
-    bool init();
-    void sychronize();
     UNSIGNED16 highbyteLowbyteExchange(const UNSIGNED16 wordData);
     void copyPort(int port, PIXYMVB_Data data, unsigned short int cycle);
 #ifdef DEBUG
     void writeDebugLog( const QString str, const SIGNED16 state );
 #endif
+
+public:
+    void sychronize();
+    bool init();
 };
 
 #endif // MvbThread_H

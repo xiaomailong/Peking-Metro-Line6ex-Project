@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'CSerialDebugDialog.h'
 **
-** Created: Sun Aug 13 18:01:12 2017
+** Created: Thu Sep 14 00:43:32 2017
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!

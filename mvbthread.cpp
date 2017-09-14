@@ -526,22 +526,6 @@ void MvbThread::sychronize()
     UNSIGNED16 RetVal = 0;
     UNSIGNED16 i = 0;
 
-    if( init() )
-    {
-        forever
-        {
-
-            //  用于测试MVB加载异常
-            //            if(test_tempdata[102]>254)
-            //            {
-            //                test_tempdata[102]=0;
-            //            }
-            //            else
-            //            {
-            //                test_tempdata[102]++;
-            //            }
-
-            // get processed src data
             if(TC1_HMI==1)
             {   // HMI tc1 set src data
                 for(i=0;i<16;i++)
@@ -568,7 +552,8 @@ void MvbThread::sychronize()
 
                 test_tempdata[100]=RetVal/256;
                 test_tempdata[101]=RetVal%256;
-    #ifdef DEBUG
+
+#ifdef DEBUG
                 writeDebugLog( "pixymvb_PutPort", RetVal );
     #endif
 
@@ -2098,13 +2083,6 @@ void MvbThread::sychronize()
 
             pixymvb_GetPort(0xD09, &temp, &snkTmeSupv);
             this->copyPort(0xD09, temp, snkTmeSupv);
-
-            // deleted by Deng Ran on the 07th of September 2017.
-            // changed by Deng Ran on the 31st of July 2017.
-            // msleep(300);
-        } // end
-
-    }
 }
 
 UNSIGNED16 MvbThread::highbyteLowbyteExchange( const UNSIGNED16 wordData )

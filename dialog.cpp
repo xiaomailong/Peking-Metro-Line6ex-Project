@@ -244,18 +244,9 @@ Dialog::Dialog(QWidget *parent) :
 //             this,  SLOT( getRevDataSlot( int, QByteArray, int ) ) );
 #endif
 
-#ifdef USE_MVB_DATA
-
+    // changed by Deng Ran on the 14th of September 2017
     m_mvbthread  = new MvbThread;
-
-    // deleted by Deng Ran on the 07th of September 2017, the prgram would be regarded as single thread.
-    // changed by Deng Ran on the 04th of September 2017.
-    // m_mvbthread->start();
-
-    // m_mvbthread->render();
-    // writeLog("USE_MVB_DATA\n");
-#endif
-
+    m_mvbthread->init();
 
     //init page
     IMPLEMENT_PAGE_MANAGE()
@@ -315,7 +306,7 @@ void Dialog::changeEvent(QEvent *e)
 
 void Dialog::OnUpdateData()
 {
-    static unsigned short int counter = 0;
+    static  int counter = 0;
 
     CPage* pPage = g_PageVec[CGlobal::m_nCurPageIndex];
     if (pPage == NULL)
@@ -396,9 +387,7 @@ void Dialog::OnUpdateData()
     // added by Deng Ran on the 07th of September 2017.
     if (counter % 2 == 0)
     {
-        #ifdef USE_MVB_DATA
-                m_mvbthread->sychronize();
-        #endif
+        m_mvbthread->sychronize();
     }
 
     counter = (counter ++) / 1000;

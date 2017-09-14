@@ -87,10 +87,7 @@
 // added by Deng Ran on the 18th of August 2017
 #include "allportspage.h"
 #include "cversioninfopage2.h"
-
-#ifdef USE_MVB_DATA
 #include "mvbthread.h"
-#endif
 
 namespace Ui {
     class Dialog;
@@ -109,9 +106,8 @@ public:
 
 private:
     SerialThread* m_serialThread;
-#ifdef USE_MVB_DATA
     MvbThread *m_mvbthread;
-#endif
+
     CLog m_log;
     QTimer m_logTimer;
     QTimer dateTimer;
@@ -172,7 +168,6 @@ protected slots:
 
     // deleted by Deng Ran on the 31st of July 2017.
     // void OnTimer30s();
-
     void getRevDataSlot( int const pageNo, const QByteArray data, int const length );
 
 private:

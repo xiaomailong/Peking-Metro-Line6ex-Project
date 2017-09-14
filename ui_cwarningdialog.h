@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'cwarningdialog.ui'
 **
-** Created: Mon Sep 4 14:39:03 2017
+** Created: Thu Sep 14 00:42:07 2017
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
